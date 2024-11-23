@@ -1,8 +1,6 @@
 using CastCradleDesktopApp.ViewModel;
 
-namespace CastCradleDesktopApp;
-
-public partial class RegisterPage : ContentPage
+namespace CastCradleDesktopApp
 {
     public partial class RegisterPage : ContentPage
     {

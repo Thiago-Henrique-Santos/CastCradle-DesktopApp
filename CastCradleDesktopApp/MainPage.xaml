@@ -25,7 +25,7 @@
               VerticalOptions="Center">
 
                 <Image Grid.ColumnSpan="2"
-                    Source="castcradle_logopng.png"/>
+                    Source="castcradle_logo.png"/>
 
                 <Entry Grid.Row="1"
                    Placeholder="E-mail"
