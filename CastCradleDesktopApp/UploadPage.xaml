@@ -86,8 +86,25 @@
                 </StackLayout>
 
                 <!-- Declaração e Ações -->
-                <CheckBox x:Name="PropriedadeSobreConteudo" />
-                <Label Text="Declaro que sou proprietário do conteúdo"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    
+                    <CheckBox x:Name="PropriedadeSobreConteudo"
+                              Grid.Row="0"
+                              Grid.Column="0"
+                              VerticalOptions="Center"/>
+                    <Label Text="Declaro que sou proprietário do conteúdo"
+                           Grid.Row="0"
+                           Grid.Column="1"
+                           VerticalOptions="Center"/>
+                </Grid>
+                
                 <StackLayout Orientation="Horizontal" Spacing="20">
                     <Button Text="Cancelar" BackgroundColor="#FF1744" TextColor="White" />
                     <Button Text="Publicar" BackgroundColor="#4CAF50" TextColor="White" />
