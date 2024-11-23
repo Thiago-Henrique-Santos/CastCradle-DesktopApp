@@ -6,15 +6,32 @@
 
     <Grid RowDefinitions="Auto, *, Auto" ColumnDefinitions="Auto, *">
         <!-- Menu Lateral -->
-        <StackLayout Grid.Row="0" Grid.Column="0" BackgroundColor="#6200EE" Padding="10">
-            <Label Text="Cast Cradle" FontSize="24" TextColor="White"/>
-            <Button Text="Dashboard" />
-            <Button Text="Publicar" />
-            <Button Text="Vídeo" />
-            <Button Text="Áudio" />
-            <Button Text="Playlists" />
-            <Button Text="Canal" />
-            <Button Text="Sair" />
+        <StackLayout Grid.Row="0" Grid.Column="0" BackgroundColor="#1B3658" Padding="10">
+            <Label Text="Cast Cradle" 
+                   FontSize="24" 
+                   TextColor="White"
+                   Margin="15"/>
+            <Button Text="Dashboard"
+                    BackgroundColor="#21709E"
+                    Margin="5"/>
+            <Button Text="Publicar"
+                    BackgroundColor="#21709E"
+                    Margin="5"/>
+            <Button Text="Vídeo"
+                    BackgroundColor="#21709E"
+                    Margin="5"/>
+            <Button Text="Áudio"
+                    BackgroundColor="#21709E"
+                    Margin="5"/>
+            <Button Text="Playlists"
+                    BackgroundColor="#21709E"
+                    Margin="5"/>
+            <Button Text="Canal"
+                    BackgroundColor="#21709E"
+                    Margin="5"/>
+            <Button Text="Sair"
+                    BackgroundColor="#21709E"
+                    Margin="5"/>
         </StackLayout>
 
         <!-- Conteúdo Principal -->
@@ -34,6 +51,7 @@
             <!-- Tabela de Visualizações -->
             <Grid Margin="0, 20">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
@@ -66,12 +84,18 @@
 
             <!-- Botões com informações -->
             <StackLayout Orientation="Horizontal" Spacing="20" Padding="0, 20">
-                <Button Text="Vídeo (Vídeos)" />
-                <Button Text="Vídeo (Podcasts)" />
-                <Button Text="Podcast (Vídeo)" />
-                <Button Text="Podcast (Áudio)" />
-                <Button Text="Música (Áudio)" />
-                <Button Text="Inscrições" />
+                <Button Text="Vídeo (Vídeos)"
+                        BackgroundColor="#21709E"/>
+                <Button Text="Vídeo (Podcasts)"
+                        BackgroundColor="#21709E"/>
+                <Button Text="Podcast (Vídeo)"
+                        BackgroundColor="#21709E"/>
+                <Button Text="Podcast (Áudio)"
+                        BackgroundColor="#21709E"/>
+                <Button Text="Música (Áudio)"
+                        BackgroundColor="#21709E"/>
+                <Button Text="Inscrições"
+                        BackgroundColor="#21709E"/>
             </StackLayout>
         </StackLayout>
     </Grid>
