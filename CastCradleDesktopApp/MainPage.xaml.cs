@@ -2,24 +2,23 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
+
+            // Cria o ApiService com o HttpClient já configurado
+            var apiService = new ApiService(App.HttpClient);
+
+            // Passa o ApiService para o MainViewModel
+            BindingContext = new MainViewModel(apiService);
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private async void OnRegisterClicked(object sender, EventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            // Navegar para a página de registro
+            await Navigation.PushAsync(new RegisterPage());
         }
+
     }
 
 }
