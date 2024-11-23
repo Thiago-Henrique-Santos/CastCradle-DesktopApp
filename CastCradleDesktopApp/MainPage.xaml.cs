@@ -1,4 +1,6 @@
-﻿namespace CastCradleDesktopApp
+﻿using CastCradleDesktopApp.ViewModel;
+
+namespace CastCradleDesktopApp
 {
     public partial class MainPage : ContentPage
     {
