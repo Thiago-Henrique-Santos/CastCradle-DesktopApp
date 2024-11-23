@@ -15,6 +15,7 @@
                     BackgroundColor="#21709E"
                     Margin="5"/>
             <Button Text="Publicar"
+                    Clicked="OnPublicarClicked"
                     BackgroundColor="#21709E"
                     Margin="5"/>
             <Button Text="Vídeo"
