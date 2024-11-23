@@ -1,37 +1,33 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CastCradleDesktopApp.Features.Model;
+using CastCradleDesktopApp.Features.Services;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
 namespace CastCradleDesktopApp.ViewModel
 {
-    public partial class RegisterViewModel : ObservableObject
+    public partial class RegisterViewModel(CriadorService criadorService) : ObservableObject
     {
-        private readonly ApiService _apiService;
-
-        public RegisterViewModel(ApiService apiService)
-        {
-            _apiService = apiService;
-        }
+        private readonly CriadorService _criadorService = criadorService;
+        [ObservableProperty]
+        string? userName;
 
         [ObservableProperty]
-        string userName;
+        string? userEmail;
 
         [ObservableProperty]
-        string userEmail;
+        string? password;
 
         [ObservableProperty]
-        string password;
+        string? confirmPassword;
 
         [ObservableProperty]
-        string confirmPassword;
+        string? securityQuestion;
 
         [ObservableProperty]
-        string securityQuestion;
+        string? securityAnswer;
 
         [ObservableProperty]
-        string securityAnswer;
-
-        [ObservableProperty]
-        string feedbackMessage;
+        string? feedbackMessage;
 
         [ObservableProperty]
         bool isFeedbackVisible;
@@ -42,62 +38,52 @@ namespace CastCradleDesktopApp.ViewModel
         [RelayCommand]
         public async Task RegisterAsync()
         {
-            if (IsBusy) return; // Previne múltiplos cliques
+            if (IsBusy) return;
             IsBusy = true;
+
+            FeedbackMessage = "Realizando cadastro...";
+            IsFeedbackVisible = true;
+
+            if (string.IsNullOrWhiteSpace(UserName) ||
+                string.IsNullOrWhiteSpace(UserEmail) ||
+                string.IsNullOrWhiteSpace(Password) ||
+                string.IsNullOrWhiteSpace(ConfirmPassword) ||
+                string.IsNullOrWhiteSpace(SecurityQuestion) ||
+                string.IsNullOrWhiteSpace(SecurityAnswer))
+            {
+                FeedbackMessage = "Há campo(s) não preenchido(s)!";
+                IsFeedbackVisible = true;
+                return;
+            }
+
+            if (Password != ConfirmPassword)
+            {
+                FeedbackMessage = "As senhas não coincidem!";
+                IsFeedbackVisible = true;
+                return;
+            }
+
+            var request = new CriadorCadastroRequest
+            {
+                Email = UserEmail,
+                Nome = UserName,
+                Senha = Password,
+                Pergunta = SecurityQuestion,
+                Resposta = SecurityAnswer
+            };
 
             try
             {
-                // Exibe a mensagem de cadastro em andamento
-                FeedbackMessage = "Realizando cadastro...";
+                await _criadorService.Register(request);
+                FeedbackMessage = "Cadastro realizado com sucesso!";
                 IsFeedbackVisible = true;
-
-                // Validação de campos
-                if (string.IsNullOrWhiteSpace(UserName) ||
-                    string.IsNullOrWhiteSpace(UserEmail) ||
-                    string.IsNullOrWhiteSpace(Password) ||
-                    string.IsNullOrWhiteSpace(ConfirmPassword) ||
-                    string.IsNullOrWhiteSpace(SecurityQuestion) ||
-                    string.IsNullOrWhiteSpace(SecurityAnswer))
-                {
-                    FeedbackMessage = "Há campo(s) não preenchido(s)!";
-                    IsFeedbackVisible = true;
-                    return;
-                }
-
-                if (Password != ConfirmPassword)
-                {
-                    FeedbackMessage = "As senhas não coincidem!";
-                    IsFeedbackVisible = true;
-                    return;
-                }
-
-                // Chamada ao serviço para cadastro
-                var isSuccess = await _apiService.RegisterUserAsync(
-                    UserName,
-                    UserEmail,
-                    Password,
-                    SecurityQuestion,
-                    SecurityAnswer
-                );
-
-                if (isSuccess)
-                {
-                    FeedbackMessage = "Cadastro realizado com sucesso!";
-                    IsFeedbackVisible = true;
-
-                    // Aguarda 5 segundos antes de voltar à tela de login
-                    await Task.Delay(5000);
-                    await Application.Current.MainPage.Navigation.PopAsync();
-                }
-                else
-                {
-                    FeedbackMessage = "Erro ao realizar o cadastro. Tente novamente!";
-                    IsFeedbackVisible = true;
-                }
+                IsBusy = false;
             }
-            finally
+            catch (Exception)
             {
-                IsBusy = false; // Garante que o estado de carregamento seja desativado
+                FeedbackMessage = "Erro ao realizar o cadastro. Tente novamente!";
+                IsFeedbackVisible = true;
+                IsBusy = false;
             }
         }
     }

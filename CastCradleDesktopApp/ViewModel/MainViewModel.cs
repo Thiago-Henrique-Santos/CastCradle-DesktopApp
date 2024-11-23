@@ -1,33 +1,26 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CastCradleDesktopApp.Features.Model;
+using CastCradleDesktopApp.Features.Services;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
 namespace CastCradleDesktopApp.ViewModel
 {
-    public partial class MainViewModel : ObservableObject
+    public partial class MainViewModel() : ObservableObject
     {
-        private readonly ApiService _apiService;
-
-        public MainViewModel(ApiService apiService)
-        {
-            _apiService = apiService;
-            IsLoginFeedbackVisible = false;
-            LoginFeedback = string.Empty;
-        }
+        [ObservableProperty]
+        string loginFeedback = string.Empty;
 
         [ObservableProperty]
-        string loginFeedback;
+        bool isLoginFeedbackVisible = false;
 
         [ObservableProperty]
-        bool isLoginFeedbackVisible;
+        string userEmail = string.Empty;
 
         [ObservableProperty]
-        string userEmail;
-
-        [ObservableProperty]
-        string pass;
+        string pass = string.Empty;
 
         [RelayCommand]
-        async void Login()
+        public async Task Login()
         {
             if(string.IsNullOrWhiteSpace(UserEmail) ||
                string.IsNullOrWhiteSpace(Pass))
@@ -41,8 +34,13 @@ namespace CastCradleDesktopApp.ViewModel
             IsLoginFeedbackVisible = true;
             LoginFeedback = "Verificando credenciais...";
 
-            // Chama o ApiService para realizar o login
-            var loginSuccess = await _apiService.LoginAsync(UserEmail, Pass);
+            var request = new LoginRequest
+            {
+                Email = UserEmail,
+                Senha = Pass
+            };
+            var loginService = new LoginService();
+            var loginSuccess = await loginService.Login(request);
 
             if (loginSuccess)
             {
@@ -54,7 +52,6 @@ namespace CastCradleDesktopApp.ViewModel
                 LoginFeedback = "Nome de usuário ou senha incorretos.";
             }
 
-            // Opcional: Limpar os campos após o login
             UserEmail = string.Empty;
             Pass = string.Empty;
         }

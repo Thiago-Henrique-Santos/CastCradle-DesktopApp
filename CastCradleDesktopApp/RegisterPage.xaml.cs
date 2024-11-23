@@ -1,3 +1,4 @@
+using CastCradleDesktopApp.Features.Services;
 using CastCradleDesktopApp.ViewModel;
 
 namespace CastCradleDesktopApp
@@ -7,7 +8,7 @@ namespace CastCradleDesktopApp
         public RegisterPage()
         {
             InitializeComponent();
-            BindingContext = new RegisterViewModel(new ApiService(App.HttpClient));
+            BindingContext = new RegisterViewModel(new CriadorService());
         }
 
         private async void OnCancelClicked(object sender, EventArgs e)
