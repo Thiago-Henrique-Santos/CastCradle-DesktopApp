@@ -1,30 +1,26 @@
-﻿using CastCradleDesktopApp.ViewModel;
+﻿using CastCradleDesktopApp.Features.Services;
+using CastCradleDesktopApp.ViewModel;
 
 namespace CastCradleDesktopApp
 {
     public partial class App : Application
     {
+        public static HttpClient HttpClient { get; private set; } = new HttpClient
+        {
+            Timeout = TimeSpan.FromSeconds(120)
+        };
 
-        public static HttpClient HttpClient { get; private set; }
         public App()
         {
             InitializeComponent();
 
             HttpClient = new HttpClient
             {
-                BaseAddress = new Uri("https://dev.azure.com/marvinborges770/PIM_Aleph/_git/CastCradleAPI/")
+                Timeout = TimeSpan.FromSeconds(120)
             };
 
-            var apiService = new ApiService(HttpClient);
-
-            // Passa o ApiService para o MainViewModel
-            MainPage = new MainPage
-            {
-                BindingContext = new MainViewModel(apiService)
-            };
-
-            // Envolvendo a MainPage com a NavigationPage para permitir navegação
-            MainPage = new NavigationPage(new MainPage());
+            var mainViewModel = new MainViewModel();
+            MainPage = new NavigationPage(new MainPage(mainViewModel));
         }
     }
 }
