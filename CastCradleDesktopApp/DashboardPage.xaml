@@ -4,44 +4,33 @@
              x:Class="CastCradleDesktopApp.DashboardPage"
              Title="Dashboard">
 
-    <Grid RowDefinitions="Auto, *, Auto" ColumnDefinitions="Auto, *">
-        <!-- Menu Lateral -->
-        <StackLayout Grid.Row="0" Grid.Column="0" BackgroundColor="#1B3658" Padding="10">
+    <Grid RowDefinitions="Auto, *, Auto" ColumnDefinitions="200, *">
+
+        <StackLayout BackgroundColor="#223D5C" Grid.RowSpan="2" Padding="20" Spacing="20">
             <Label Text="Cast Cradle" 
                    FontSize="24" 
+                   FontAttributes="Bold" 
                    TextColor="White"
-                   Margin="15"/>
-            <Button Text="Dashboard"
-                    BackgroundColor="#21709E"
-                    Margin="5"/>
-            <Button Text="Publicar"
-                    Clicked="OnPublicarClicked"
-                    BackgroundColor="#21709E"
-                    Margin="5"/>
-            <Button Text="Vídeo"
-                    BackgroundColor="#21709E"
-                    Margin="5"/>
-            <Button Text="Áudio"
-                    BackgroundColor="#21709E"
-                    Margin="5"/>
-            <Button Text="Playlists"
-                    BackgroundColor="#21709E"
-                    Margin="5"/>
-            <Button Text="Canal"
-                    BackgroundColor="#21709E"
-                    Margin="5"/>
-            <Button Text="Sair"
-                    BackgroundColor="#21709E"
-                    Margin="5"/>
+                   HorizontalOptions="Start" />
+
+            <Button Text="Dashboard" BackgroundColor="#1565C0" TextColor="White"/>
+            <Button Text="Publicar" 
+                    BackgroundColor="#1565C0" 
+                    TextColor="White"
+                    Clicked="OnPublicarClicked"/>
+            <Button Text="Vídeos" 
+                    BackgroundColor="#1565C0" 
+                    TextColor="White"
+                    Clicked="OnVideosClicked"/>
+            <Button Text="Áudios" BackgroundColor="#1565C0" TextColor="White" />
+            <Button Text="Playlists" BackgroundColor="#1565C0" TextColor="White" />
+            <Button Text="Canal" BackgroundColor="#1565C0" TextColor="White" />
+            <Button Text="Sair" BackgroundColor="#FF1744" TextColor="White" />
         </StackLayout>
 
-        <!-- Conteúdo Principal -->
         <StackLayout Grid.Row="0" Grid.Column="1" Padding="20">
-            <!-- Título -->
             <Label Text="Gráfico Setorial de Visualizações por Conteúdo e Inscrições no Canal" FontSize="18" FontAttributes="Bold" Margin="0, 0, 0, 20"/>
 
-            <!-- Gráfico Circular (Exemplo com Chart) -->
-            <!-- Representação Simples do Gráfico: Círculo com cores diferentes -->
             <Grid HorizontalOptions="Center" VerticalOptions="Center">
                 <Ellipse WidthRequest="200" HeightRequest="200" Fill="#00C8C8" HorizontalOptions="Center"/>
                 <Ellipse WidthRequest="150" HeightRequest="150" Fill="#0067FF" HorizontalOptions="Center" VerticalOptions="Center"/>
@@ -49,7 +38,6 @@
                 <Ellipse WidthRequest="50" HeightRequest="50" Fill="#FF5C00" HorizontalOptions="Center" VerticalOptions="Center"/>
             </Grid>
 
-            <!-- Tabela de Visualizações -->
             <Grid Margin="0, 20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -83,7 +71,6 @@
                 <Label Grid.Row="5" Grid.Column="1" Text="2.101" />
             </Grid>
 
-            <!-- Botões com informações -->
             <StackLayout Orientation="Horizontal" Spacing="20" Padding="0, 20">
                 <Button Text="Vídeo (Vídeos)"
                         BackgroundColor="#21709E"/>

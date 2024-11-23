@@ -8,7 +8,6 @@
     <ScrollView>
         <Grid>
 
-            <!-- Gradiente com BoxView -->
             <BoxView>
                 <BoxView.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">

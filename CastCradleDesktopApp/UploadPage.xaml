@@ -6,36 +6,37 @@
 
     <ScrollView>
         <Grid RowDefinitions="Auto, *" ColumnDefinitions="200, *">
-            <!-- Menu Lateral -->
             <StackLayout BackgroundColor="#223D5C" Grid.RowSpan="2" Padding="20" Spacing="20">
                 <Label Text="Cast Cradle" 
-               FontSize="24" 
-               FontAttributes="Bold" 
-               TextColor="White"
-               HorizontalOptions="Start" />
+                       FontSize="24" 
+                       FontAttributes="Bold" 
+                       TextColor="White"
+                       HorizontalOptions="Start" />
 
-                <Button Text="Dashboard" BackgroundColor="#1565C0" TextColor="White" />
+                <Button Text="Dashboard" 
+                        BackgroundColor="#1565C0" 
+                        TextColor="White"
+                        Clicked="OnDashboardClicked"/>
                 <Button Text="Publicar" BackgroundColor="#1565C0" TextColor="White" />
-                <Button Text="Vídeo" BackgroundColor="#1565C0" TextColor="White" />
-                <Button Text="Áudio" BackgroundColor="#1565C0" TextColor="White" />
+                <Button Text="Vídeos"
+                        BackgroundColor="#1565C0"
+                        TextColor="White"
+                        Clicked="OnVideosClicked"/>
+                <Button Text="Áudios" BackgroundColor="#1565C0" TextColor="White" />
                 <Button Text="Playlists" BackgroundColor="#1565C0" TextColor="White" />
                 <Button Text="Canal" BackgroundColor="#1565C0" TextColor="White" />
                 <Button Text="Sair" BackgroundColor="#FF1744" TextColor="White" />
             </StackLayout>
 
-            <!-- Conteúdo -->
             <StackLayout Padding="20" Grid.Column="1" Spacing="20">
                 <Label Text="Upload de Conteúdo" FontSize="24" FontAttributes="Bold" />
 
-                <!-- Formulário -->
                 <StackLayout Spacing="10">
                     <Entry  Placeholder="Título do conteúdo" />
                     <Editor Placeholder="Descrição do conteúdo" AutoSize="TextChanges" HeightRequest="100" />
 
-                    <!-- Escolha de Arquivo -->
                     <Button Text="Escolher Arquivo" BackgroundColor="#1565C0" TextColor="White" />
 
-                    <!-- Tipo de Conteúdo -->
                     <Label Text="Tipo de Conteúdo" FontAttributes="Bold" />
                     <StackLayout Orientation="Horizontal" Spacing="10">
                         <Button Text="Vídeo" BackgroundColor="#D3D3D3" />
@@ -43,7 +44,6 @@
                         <Button Text="Podcast" BackgroundColor="#D3D3D3" />
                     </StackLayout>
 
-                    <!-- Seleção de Playlist -->
                     <Label Text="Playlist" FontAttributes="Bold" />
                     <Grid>
                         <Grid.RowDefinitions>
@@ -85,7 +85,6 @@
                     </Grid>
                 </StackLayout>
 
-                <!-- Declaração e Ações -->
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="40" />

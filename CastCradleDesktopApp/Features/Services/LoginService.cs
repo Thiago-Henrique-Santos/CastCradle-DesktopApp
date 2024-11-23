@@ -8,7 +8,7 @@ namespace CastCradleDesktopApp.Features.Services
     {
         public async Task<bool> Login(LoginRequest loginRequest)
         {
-            var response = await Post<object, LoginResponse>("login::criador", loginRequest);
+            var response = await Post<object, LoginResponse>("/login::criador", loginRequest);
             if (response != null && !string.IsNullOrEmpty(response.JWT))
             {
                 JWTStore.SetToken(response.JWT);

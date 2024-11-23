@@ -12,5 +12,10 @@ namespace CastCradleDesktopApp
             // Navegar para a página de registro
             await Navigation.PushAsync(new UploadPage());
         }
+        private async void OnVideosClicked(object sender, EventArgs e)
+        {
+            // Navegar para a página de registro
+            await Navigation.PushAsync(new VideosPage());
+        }
     }
 }

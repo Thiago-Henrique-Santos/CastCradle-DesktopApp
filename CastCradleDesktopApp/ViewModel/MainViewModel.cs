@@ -30,7 +30,6 @@ namespace CastCradleDesktopApp.ViewModel
                 return;
             }
 
-            // Mostra feedback que está processando o login
             IsLoginFeedbackVisible = true;
             LoginFeedback = "Verificando credenciais...";
 

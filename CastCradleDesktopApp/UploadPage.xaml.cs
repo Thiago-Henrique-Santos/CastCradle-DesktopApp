@@ -6,15 +6,22 @@ public partial class UploadPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void OnCancelClicked(object sender, EventArgs e)
+    {
+        // Navegar para a página de registro
+        await Navigation.PopAsync();
+    }
+
     private async void OnDashboardClicked(object sender, EventArgs e)
     {
         // Navegar para a página de registro
         await Navigation.PushAsync(new DashboardPage());
     }
 
-    private async void OnCancelClicked(object sender, EventArgs e)
+    private async void OnVideosClicked(object sender, EventArgs e)
     {
         // Navegar para a página de registro
-        await Navigation.PopAsync();
+        await Navigation.PushAsync(new VideosPage());
     }
 }
