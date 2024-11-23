@@ -47,8 +47,23 @@ namespace CastCradleDesktopApp.Features.Services
                 );
             }
         }
+        public async Task<R?> Get<R>(string endpoint, int id)
+        {
+            string url = $"{_apiEndpoint}{endpoint}/{id}";
+            ConfigHeaders();
+            var response = await _httpClient.GetAsync(url);
+            return await JSONResultHandle<R>(response);
+        }
 
-        public async Task<R?> Get<T, R>(string endpoint, T? query)
+        public async Task<R?> Get<R>(string endpoint)
+        {
+            string url = $"{_apiEndpoint}{endpoint}";
+            ConfigHeaders();
+            var response = await _httpClient.GetAsync(url);
+            return await JSONResultHandle<R>(response);
+        }
+
+        public async Task<R?> Get<R, T>(string endpoint, T? query)
         {
             string url;
             if (query != null)
@@ -89,7 +104,8 @@ namespace CastCradleDesktopApp.Features.Services
             var response = await _httpClient.PutAsync($"{_apiEndpoint}{endpoint}", content);
             return await JSONResultHandle<R>(response);
         }
-        public async Task<R?> Delete<T, R>(string endpoint, int id)
+
+        public async Task<R?> Delete<R>(string endpoint, int id)
         {
             ConfigHeaders();
             var response = await _httpClient.DeleteAsync($"{_apiEndpoint}{endpoint}/{id}");
