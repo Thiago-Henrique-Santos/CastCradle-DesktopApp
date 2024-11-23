@@ -4,7 +4,7 @@
              x:Class="CastCradleDesktopApp.RegisterPage"
              xmlns:viewmodel="clr-namespace:CastCradleDesktopApp.ViewModel"
              x:DataType="viewmodel:RegisterViewModel"
-             Title="RegisterPage">
+             Title="Cadastrar conta">
     <ScrollView>
         <Grid>
 

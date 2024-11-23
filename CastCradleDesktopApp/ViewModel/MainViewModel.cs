@@ -22,6 +22,15 @@ namespace CastCradleDesktopApp.ViewModel
         [RelayCommand]
         public async Task Login()
         {
+            if(string.IsNullOrWhiteSpace(UserEmail) ||
+               string.IsNullOrWhiteSpace(Pass))
+            {
+                IsLoginFeedbackVisible = true;
+                LoginFeedback = "E-mail ou senha não inseridos!";
+                return;
+            }
+
+            // Mostra feedback que está processando o login
             IsLoginFeedbackVisible = true;
             LoginFeedback = "Verificando credenciais...";
 
@@ -35,7 +44,8 @@ namespace CastCradleDesktopApp.ViewModel
 
             if (loginSuccess)
             {
-                LoginFeedback = "Login bem-sucedido!";
+                LoginFeedback = "Login bem-sucedido! Carregando seu painel...";
+                await Application.Current.MainPage.Navigation.PushAsync(new DashboardPage());
             }
             else
             {
