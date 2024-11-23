@@ -4,64 +4,96 @@
              x:Class="CastCradleDesktopApp.UploadPage"
              Title="UploadPage">
 
-    <Grid RowDefinitions="Auto, *" ColumnDefinitions="200, *">
-        <!-- Menu Lateral -->
-        <StackLayout BackgroundColor="#223D5C" Grid.RowSpan="2" Padding="20" Spacing="20">
-            <Label Text="Cast Cradle" 
-                   FontSize="24" 
-                   FontAttributes="Bold" 
-                   TextColor="White"
-                   HorizontalOptions="Start" />
+    <ScrollView>
+        <Grid RowDefinitions="Auto, *" ColumnDefinitions="200, *">
+            <!-- Menu Lateral -->
+            <StackLayout BackgroundColor="#223D5C" Grid.RowSpan="2" Padding="20" Spacing="20">
+                <Label Text="Cast Cradle" 
+               FontSize="24" 
+               FontAttributes="Bold" 
+               TextColor="White"
+               HorizontalOptions="Start" />
 
-            <Button Text="Dashboard" BackgroundColor="#1565C0" TextColor="White" />
-            <Button Text="Publicar" BackgroundColor="#1565C0" TextColor="White" />
-            <Button Text="Vídeo" BackgroundColor="#1565C0" TextColor="White" />
-            <Button Text="Áudio" BackgroundColor="#1565C0" TextColor="White" />
-            <Button Text="Playlists" BackgroundColor="#1565C0" TextColor="White" />
-            <Button Text="Canal" BackgroundColor="#1565C0" TextColor="White" />
-            <Button Text="Sair" BackgroundColor="#FF1744" TextColor="White" />
-        </StackLayout>
+                <Button Text="Dashboard" BackgroundColor="#1565C0" TextColor="White" />
+                <Button Text="Publicar" BackgroundColor="#1565C0" TextColor="White" />
+                <Button Text="Vídeo" BackgroundColor="#1565C0" TextColor="White" />
+                <Button Text="Áudio" BackgroundColor="#1565C0" TextColor="White" />
+                <Button Text="Playlists" BackgroundColor="#1565C0" TextColor="White" />
+                <Button Text="Canal" BackgroundColor="#1565C0" TextColor="White" />
+                <Button Text="Sair" BackgroundColor="#FF1744" TextColor="White" />
+            </StackLayout>
 
-        <!-- Conteúdo -->
-        <StackLayout Padding="20" Grid.Column="1" Spacing="20">
-            <Label Text="Upload de Conteúdo" FontSize="24" FontAttributes="Bold" />
+            <!-- Conteúdo -->
+            <StackLayout Padding="20" Grid.Column="1" Spacing="20">
+                <Label Text="Upload de Conteúdo" FontSize="24" FontAttributes="Bold" />
 
-            <!-- Formulário -->
-            <StackLayout Spacing="10">
-                <Entry  Placeholder="Título do conteúdo" />
-                <Editor Placeholder="Descrição do conteúdo" AutoSize="TextChanges" HeightRequest="100" />
+                <!-- Formulário -->
+                <StackLayout Spacing="10">
+                    <Entry  Placeholder="Título do conteúdo" />
+                    <Editor Placeholder="Descrição do conteúdo" AutoSize="TextChanges" HeightRequest="100" />
 
-                <!-- Escolha de Arquivo -->
-                <Button Text="Escolher Arquivo" BackgroundColor="#1565C0" TextColor="White" />
+                    <!-- Escolha de Arquivo -->
+                    <Button Text="Escolher Arquivo" BackgroundColor="#1565C0" TextColor="White" />
 
-                <!-- Tipo de Conteúdo -->
-                <Label Text="Tipo de Conteúdo" FontAttributes="Bold" />
-                <StackLayout Orientation="Horizontal" Spacing="10">
-                    <Button Text="Vídeo" BackgroundColor="#D3D3D3" />
-                    <Button Text="Música" BackgroundColor="#D3D3D3" />
-                    <Button Text="Podcast" BackgroundColor="#D3D3D3" />
+                    <!-- Tipo de Conteúdo -->
+                    <Label Text="Tipo de Conteúdo" FontAttributes="Bold" />
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Button Text="Vídeo" BackgroundColor="#D3D3D3" />
+                        <Button Text="Música" BackgroundColor="#D3D3D3" />
+                        <Button Text="Podcast" BackgroundColor="#D3D3D3" />
+                    </StackLayout>
+
+                    <!-- Seleção de Playlist -->
+                    <Label Text="Playlist" FontAttributes="Bold" />
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="40" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <CheckBox x:Name="Playlist1"
+                                  Grid.Row="0"
+                                  Grid.Column="0"
+                                  VerticalOptions="Center"/>
+                        <Label Text="Playlist 1"
+                               Grid.Row="0"
+                               Grid.Column="1"
+                               VerticalOptions="Center"/>
+
+                        <CheckBox x:Name="Playlist2"
+                                  Grid.Row="1"
+                                  Grid.Column="0"
+                                  VerticalOptions="Center"/>
+                        <Label Text="Playlist 2"
+                               Grid.Row="1"
+                               Grid.Column="1"
+                               VerticalOptions="Center"/>
+
+                        <CheckBox x:Name="Playlist3"
+                                  Grid.Row="2"
+                                  Grid.Column="0"
+                                  VerticalOptions="Center"/>
+                        <Label Text="Playlist 3"
+                               Grid.Row="2"
+                               Grid.Column="1"
+                               VerticalOptions="Center"/>
+                    </Grid>
                 </StackLayout>
 
-                <!-- Seleção de Playlist -->
-                <Label Text="Playlist" FontAttributes="Bold" />
-                <CheckBox x:Name="Playlist1"/>
-                <Label Text="Playlist 1"/>
-
-                <CheckBox x:Name="Playlist2"/>
-                <Label Text="Playlist 2"/>
-
-                <CheckBox x:Name="Playlist3"/>
-                <Label Text="Playlist 3"/>
+                <!-- Declaração e Ações -->
+                <CheckBox x:Name="PropriedadeSobreConteudo" />
+                <Label Text="Declaro que sou proprietário do conteúdo"/>
+                <StackLayout Orientation="Horizontal" Spacing="20">
+                    <Button Text="Cancelar" BackgroundColor="#FF1744" TextColor="White" />
+                    <Button Text="Publicar" BackgroundColor="#4CAF50" TextColor="White" />
+                </StackLayout>
             </StackLayout>
-
-            <!-- Declaração e Ações -->
-            <CheckBox x:Name="PropriedadeSobreConteudo" />
-            <Label Text="Declaro que sou proprietário do conteúdo"/>
-            <StackLayout Orientation="Horizontal" Spacing="20">
-                <Button Text="Cancelar" BackgroundColor="#FF1744" TextColor="White" />
-                <Button Text="Publicar" BackgroundColor="#4CAF50" TextColor="White" />
-            </StackLayout>
-        </StackLayout>
-    </Grid>
+        </Grid>
+    </ScrollView>
 
 </ContentPage>
