@@ -55,19 +55,19 @@
                         <Grid RowDefinitions="Auto,Auto,Auto"
                               ColumnDefinitions="Auto,*,Auto"
                               ColumnSpacing="10">
-                            <Image Source="video_thumbnail1.png"
+                            <Image Source="audio_thumbnail1.png"
                                    WidthRequest="50"
                                    HeightRequest="50"
                                    VerticalOptions="Center"
                                    Grid.RowSpan="3"/>
 
-                            <Label Text="01 - INTRODUÇÃO À BIOINFORMÁTICA"
+                            <Label Text="01 - Quatro Estações"
                                    FontSize="14"
                                    FontAttributes="Bold"
                                    Grid.Column="1"
                                    TextColor="#3A71B8"/>
 
-                            <Label Text="Visão geral da intersecção entre programação, big data, genética, genômica e proteômica."
+                            <Label Text="Música de Vival/Canastra Musical"
                                    FontSize="12"
                                    Grid.Column="1"
                                    Grid.Row="1"
@@ -100,13 +100,13 @@
                                    VerticalOptions="Center"
                                    Grid.RowSpan="3"/>
 
-                            <Label Text="02 - REVISÃO DE ESTRUTURA DE PROTEÍNAS E SUA RELAÇÃO COM BIOINFORMÁTICA"
+                            <Label Text="02 - Rock do Apagão"
                                    FontSize="14"
                                    FontAttributes="Bold"
                                    Grid.Column="1"
                                    TextColor="#3A71B8"/>
 
-                            <Label Text="Determinação das estruturas secundárias e terciárias de proteínas..."
+                            <Label Text="Música feita por Choque Elétrico."
                                    FontSize="12"
                                    Grid.Column="1"
                                    Grid.Row="1"
