@@ -10,23 +10,23 @@
 
             <StackLayout BackgroundColor="#223D5C" Grid.RowSpan="2" Padding="20" Spacing="20">
                 <Label Text="Cast Cradle" 
-                   FontSize="24" 
-                   FontAttributes="Bold" 
-                   TextColor="White"
-                   HorizontalOptions="Start" />
+                       FontSize="24" 
+                       FontAttributes="Bold" 
+                       TextColor="White"
+                       HorizontalOptions="Start" />
 
                 <Button Text="Dashboard" 
-                    BackgroundColor="#1565C0" 
-                    TextColor="White"
-                    Clicked="OnDashboardClicked"/>
+                        BackgroundColor="#1565C0" 
+                        TextColor="White"
+                        Clicked="OnDashboardClicked"/>
                 <Button Text="Publicar" 
-                    BackgroundColor="#1565C0" 
-                    TextColor="White"
-                    Clicked="OnPublicarClicked"/>
+                        BackgroundColor="#1565C0" 
+                        TextColor="White"
+                        Clicked="OnPublicarClicked"/>
                 <Button Text="Vídeos" 
-                    BackgroundColor="#1565C0" 
-                    TextColor="White"
-                    Clicked="OnVideosClicked"/>
+                        BackgroundColor="#1565C0" 
+                        TextColor="White"
+                        Clicked="OnVideosClicked"/>
                 <Button Text="Áudios" 
                         BackgroundColor="#1565C0" 
                         TextColor="White" 
@@ -60,32 +60,32 @@
                     <Frame BackgroundColor="White" CornerRadius="10" Padding="10" BorderColor="#E0E0E0">
                         <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto" ColumnSpacing="10">
                             <Image Source="icon_video.png"
-                                       WidthRequest="50"
-                                       HeightRequest="50"
-                                       VerticalOptions="Center"
-                                       Grid.RowSpan="3" />
+                                   WidthRequest="50"
+                                   HeightRequest="50"
+                                   VerticalOptions="Center"
+                                   Grid.RowSpan="3" />
                             <Label Text="PAPAGAINDO"
-                                       FontSize="16"
-                                       FontAttributes="Bold"
-                                       Grid.Column="1"
-                                       TextColor="#3A71B8" />
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   Grid.Column="1"
+                                   TextColor="#3A71B8"/>
                             <Label Text="Fofocas sobre linguagens de programação"
-                                       FontSize="12"
-                                       Grid.Column="1"
-                                       Grid.Row="1"
-                                       TextColor="#1D1B20" />
+                                   FontSize="12"
+                                   Grid.Column="1"
+                                   Grid.Row="1"
+                                   TextColor="#1D1B20"/>
                             <Label Text="Quantidade de vídeos: 10   Visibilidade: Pública"
-                                       FontSize="10"
-                                       Grid.Column="1"
-                                       Grid.Row="2"
-                                       TextColor="Gray" />
+                                   FontSize="10"
+                                   Grid.Column="1"
+                                   Grid.Row="2"
+                                   TextColor="Gray"/>
                             <StackLayout Orientation="Horizontal" Grid.Column="2" VerticalOptions="Center" Spacing="10">
                                 <Image Source="edit_icon.png"
-                                           HeightRequest="25"
-                                           WidthRequest="25" />
+                                       HeightRequest="25"
+                                       WidthRequest="25"/>
                                 <Image Source="delete_icon.png"
-                                           HeightRequest="25"
-                                           WidthRequest="25" />
+                                       HeightRequest="25"
+                                       WidthRequest="25"/>
                             </StackLayout>
                         </Grid>
                     </Frame>
@@ -93,32 +93,32 @@
                     <Frame BackgroundColor="White" CornerRadius="10" Padding="10" BorderColor="#E0E0E0">
                         <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto" ColumnSpacing="10">
                             <Image Source="icon_audio.png"
-                                       WidthRequest="50"
-                                       HeightRequest="50"
-                                       VerticalOptions="Center"
-                                       Grid.RowSpan="3" />
+                                   WidthRequest="50"
+                                   HeightRequest="50"
+                                   VerticalOptions="Center"
+                                   Grid.RowSpan="3"/>
                             <Label Text="DE VOLTA PARA O FUTURO DO PRESENTE"
-                                       FontSize="16"
-                                       FontAttributes="Bold"
-                                       Grid.Column="1"
-                                       TextColor="#3A71B8" />
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   Grid.Column="1"
+                                   TextColor="#3A71B8"/>
                             <Label Text="Único podcast com uma máquina do tempo..."
-                                       FontSize="12"
-                                       Grid.Column="1"
-                                       Grid.Row="1"
-                                       TextColor="#1D1B20" />
+                                   FontSize="12"
+                                   Grid.Column="1"
+                                   Grid.Row="1"
+                                   TextColor="#1D1B20"/>
                             <Label Text="Quantidade de vídeos: 10   Visibilidade: Pública"
-                                       FontSize="10"
-                                       Grid.Column="1"
-                                       Grid.Row="2"
-                                       TextColor="Gray" />
+                                   FontSize="10"
+                                   Grid.Column="1"
+                                   Grid.Row="2"
+                                   TextColor="Gray"/>
                             <StackLayout Orientation="Horizontal" Grid.Column="2" VerticalOptions="Center" Spacing="10">
                                 <Image Source="edit_icon.png"
-                                           HeightRequest="25"
-                                           WidthRequest="25" />
+                                       HeightRequest="25"
+                                       WidthRequest="25"/>
                                 <Image Source="delete_icon.png"
-                                           HeightRequest="25"
-                                           WidthRequest="25" />
+                                       HeightRequest="25"
+                                       WidthRequest="25"/>
                             </StackLayout>
                         </Grid>
                     </Frame>
