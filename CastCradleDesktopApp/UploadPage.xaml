@@ -47,8 +47,16 @@
                     <Entry  Placeholder="Título do conteúdo" />
 
                     <Label Text="Upload de Thumbnail" FontSize="18" FontAttributes="Bold" TextColor="#1D1B20"/>
-                    <Frame BackgroundColor="#E0E0E0" Padding="30" HorizontalOptions="StartAndExpand" CornerRadius="10">
-                        <Image Source="upload_icon.png" WidthRequest="50" HeightRequest="50"/>
+                    <Frame BackgroundColor="#E0E0E0" Padding="0" CornerRadius="10"
+                           WidthRequest="150" HeightRequest="150" IsClippedToBounds="True"
+                           HorizontalOptions="StartAndExpand" >
+                        <Image Source="thumbnail_publicar.png" 
+                               Aspect="AspectFill" 
+                               HorizontalOptions="Fill" 
+                               VerticalOptions="Fill" 
+                               WidthRequest="150" 
+                               HeightRequest="150">
+                        </Image>
                     </Frame>
 
                     <Editor Placeholder="Descrição do conteúdo" AutoSize="TextChanges" HeightRequest="100" />
