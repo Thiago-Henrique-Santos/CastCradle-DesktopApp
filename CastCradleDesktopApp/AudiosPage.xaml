@@ -32,7 +32,10 @@
                         BackgroundColor="#1565C0" 
                         TextColor="White" 
                         Clicked="OnPlaylistsClicked"/>
-                <Button Text="Canal" BackgroundColor="#1565C0" TextColor="White" />
+                <Button Text="Canal" 
+                        BackgroundColor="#1565C0" 
+                        TextColor="White" 
+                        Clicked="OnCanalClicked"/>
                 <Button Text="Sair" BackgroundColor="#FF1744" TextColor="White" />
             </StackLayout>
 

@@ -1,15 +1,15 @@
 namespace CastCradleDesktopApp
 {
-    public partial class UploadPage : ContentPage
+    public partial class CanalPage : ContentPage
     {
-        public UploadPage()
+        public CanalPage()
         {
             InitializeComponent();
         }
 
-        private async void OnCancelClicked(object sender, EventArgs e)
+        private async void OnPublicarClicked(object sender, EventArgs e)
         {
-            await Navigation.PopAsync();
+            await Navigation.PushAsync(new UploadPage());
         }
 
         private async void OnDashboardClicked(object sender, EventArgs e)
@@ -30,11 +30,6 @@ namespace CastCradleDesktopApp
         private async void OnPlaylistsClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new PlaylistsPage());
-        }
-
-        private async void OnCanalClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new CanalPage());
         }
 
     }

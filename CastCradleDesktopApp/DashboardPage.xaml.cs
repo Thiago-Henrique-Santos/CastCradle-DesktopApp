@@ -26,5 +26,10 @@ namespace CastCradleDesktopApp
             await Navigation.PushAsync(new PlaylistsPage());
         }
 
+        private async void OnCanalClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CanalPage());
+        }
+
     }
 }
