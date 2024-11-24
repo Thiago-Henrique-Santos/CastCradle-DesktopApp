@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CastCradleDesktopApp.PlaylistsPage"
-             Title="PlaylistsPage">
+             Title="Suas Playlists">
 
     <ScrollView>
 
@@ -63,29 +63,113 @@
                 </Grid>
 
                 <StackLayout Spacing="15">
-                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" BorderColor="#E0E0E0">
-                        <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto" ColumnSpacing="10">
-                            <Image Source="icon_video.png"
-                                   WidthRequest="50"
-                                   HeightRequest="50"
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Margin="0">
+                        <Grid RowDefinitions="Auto,Auto,Auto"
+                              ColumnDefinitions="Auto,*,Auto"
+                              ColumnSpacing="10">
+                            <Image Source="video_playlist.png"
+                                   WidthRequest="85"
+                                   HeightRequest="85"
                                    VerticalOptions="Center"
-                                   Grid.RowSpan="3" />
-                            <Label Text="PAPAGAINDO"
+                                   Grid.RowSpan="3"/>
+
+                            <Label Text="01 - ROTINA DE UM DESENVOLVEDOR FULLSTACK SENIOR"
                                    FontSize="16"
                                    FontAttributes="Bold"
                                    Grid.Column="1"
                                    TextColor="#3A71B8"/>
-                            <Label Text="Fofocas sobre linguagens de programação"
-                                   FontSize="12"
+
+                            <Label Text="Conjunto de vídeo mostrando meu dia-a-dia como um desenvolvedor fullstack."
+                                   FontSize="14"
                                    Grid.Column="1"
                                    Grid.Row="1"
-                                   TextColor="#1D1B20"/>
-                            <Label Text="Quantidade de vídeos: 10   Visibilidade: Pública"
-                                   FontSize="10"
+                                   TextColor="#1D1B20" />
+
+                            <Label Text="Quantidade de conteúdos: 2 | Visibilidade: pública | Data de publicação: 09/11/2024"
+                                   FontSize="12"
                                    Grid.Column="1"
                                    Grid.Row="2"
-                                   TextColor="Gray"/>
-                            <StackLayout Orientation="Horizontal" Grid.Column="2" VerticalOptions="Center" Spacing="10">
+                                   TextColor="Gray" />
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
+                                <Image Source="edit_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                                <Image Source="delete_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Margin="0">
+                        <Grid RowDefinitions="Auto,Auto,Auto"
+                              ColumnDefinitions="Auto,*,Auto"
+                              ColumnSpacing="10">
+                            <Image Source="podcast_playlist.png"
+                                   WidthRequest="85"
+                                   HeightRequest="85"
+                                   VerticalOptions="Center"
+                                   Grid.RowSpan="3"/>
+
+                            <Label Text="02 - PODNOSTALKS"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   Grid.Column="1"
+                                   TextColor="#3A71B8"/>
+
+                            <Label Text="Bate-papos nostálgios. - Episódios de podcasts"
+                                   FontSize="14"
+                                   Grid.Column="1"
+                                   Grid.Row="1"
+                                   TextColor="#1D1B20" />
+
+                            <Label Text="Quantidade de conteúdos: 10 | Visibilidade: pública | Data de publicação: 09/11/2024"
+                                   FontSize="12"
+                                   Grid.Column="1"
+                                   Grid.Row="2"
+                                   TextColor="Gray" />
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
+                                <Image Source="edit_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                                <Image Source="delete_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Margin="0">
+                        <Grid RowDefinitions="Auto,Auto,Auto"
+                              ColumnDefinitions="Auto,*,Auto"
+                              ColumnSpacing="10">
+                            <Image Source="musica_playlist.png"
+                                   WidthRequest="85"
+                                   HeightRequest="85"
+                                   VerticalOptions="Center"
+                                   Grid.RowSpan="3"/>
+
+                            <Label Text="03 - LO-FI PARA PROGRAMAR"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   Grid.Column="1"
+                                   TextColor="#3A71B8"/>
+
+                            <Label Text="Conjunto de lo-fi que me ajudam a concentrar no trabalho."
+                                   FontSize="14"
+                                   Grid.Column="1"
+                                   Grid.Row="1"
+                                   TextColor="#1D1B20" />
+
+                            <Label Text="Quantidade de conteúdos: 15 | Visibilidade: pública | Data de publicação: 09/11/2024"
+                                   FontSize="12"
+                                   Grid.Column="1"
+                                   Grid.Row="2"
+                                   TextColor="Gray" />
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
                                 <Image Source="edit_icon.png"
                                        HeightRequest="25"
                                        WidthRequest="25"/>
@@ -96,35 +180,119 @@
                         </Grid>
                     </Frame>
 
-                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" BorderColor="#E0E0E0">
-                        <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto" ColumnSpacing="10">
-                            <Image Source="icon_audio.png"
-                                   WidthRequest="50"
-                                   HeightRequest="50"
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Margin="0">
+                        <Grid RowDefinitions="Auto,Auto,Auto"
+                              ColumnDefinitions="Auto,*,Auto"
+                              ColumnSpacing="10">
+                            <Image Source="musica_playlist.png"
+                                   WidthRequest="85"
+                                   HeightRequest="85"
                                    VerticalOptions="Center"
                                    Grid.RowSpan="3"/>
-                            <Label Text="DE VOLTA PARA O FUTURO DO PRESENTE"
+
+                            <Label Text="04 - MÚSICAS FAVORITAS"
                                    FontSize="16"
                                    FontAttributes="Bold"
                                    Grid.Column="1"
                                    TextColor="#3A71B8"/>
-                            <Label Text="Único podcast com uma máquina do tempo..."
+
+                            <Label Text="Conjunto pessoal de músicas que gosto, disponível na plataforma."
+                                   FontSize="14"
+                                   Grid.Column="1"
+                                   Grid.Row="1"
+                                   TextColor="#1D1B20" />
+
+                            <Label Text="Quantidade de conteúdos: 2 | Visibilidade: privada | Data de publicação: 09/11/2024"
                                    FontSize="12"
+                                   Grid.Column="1"
+                                   Grid.Row="2"
+                                   TextColor="Gray" />
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
+                                <Image Source="edit_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                                <Image Source="delete_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Margin="0">
+                        <Grid RowDefinitions="Auto,Auto,Auto"
+                              ColumnDefinitions="Auto,*,Auto"
+                              ColumnSpacing="10">
+                            <Image Source="video_playlist.png"
+                                   WidthRequest="85"
+                                   HeightRequest="85"
+                                   VerticalOptions="Center"
+                                   Grid.RowSpan="3"/>
+
+                            <Label Text="05 - DICAS PARA INICIANTES"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   Grid.Column="1"
+                                   TextColor="#3A71B8"/>
+
+                            <Label Text="Vídeos e podcasts que são muito bons para você que está iniciando na área."
+                                   FontSize="14"
                                    Grid.Column="1"
                                    Grid.Row="1"
                                    TextColor="#1D1B20"/>
-                            <Label Text="Quantidade de vídeos: 10   Visibilidade: Pública"
-                                   FontSize="10"
+
+                            <Label Text="Quantidade de conteúdos: 10 | Visibilidade: pública | Data de publicação: 09/11/2024"
+                                   FontSize="12"
                                    Grid.Column="1"
                                    Grid.Row="2"
-                                   TextColor="Gray"/>
-                            <StackLayout Orientation="Horizontal" Grid.Column="2" VerticalOptions="Center" Spacing="10">
+                                   TextColor="Gray" />
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
                                 <Image Source="edit_icon.png"
                                        HeightRequest="25"
-                                       WidthRequest="25"/>
+                                       WidthRequest="25" />
                                 <Image Source="delete_icon.png"
                                        HeightRequest="25"
-                                       WidthRequest="25"/>
+                                       WidthRequest="25" />
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Margin="0">
+                        <Grid RowDefinitions="Auto,Auto,Auto"
+                              ColumnDefinitions="Auto,*,Auto"
+                              ColumnSpacing="10">
+                            <Image Source="video_playlist.png"
+                                   WidthRequest="85"
+                                   HeightRequest="85"
+                                   VerticalOptions="Center"
+                                   Grid.RowSpan="3"/>
+
+                            <Label Text="06 - LAZER E BEM-ESTAR"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   Grid.Column="1"
+                                   TextColor="#3A71B8"/>
+
+                            <Label Text="Vídeos fora do contexto profissional e acadêmico."
+                                   FontSize="14"
+                                   Grid.Column="1"
+                                   Grid.Row="1"
+                                   TextColor="#1D1B20" />
+
+                            <Label Text="Quantidade de conteúdos: 4 | Visibilidade: pública | Data de publicação: 09/11/2024"
+                                   FontSize="12"
+                                   Grid.Column="1"
+                                   Grid.Row="2"
+                                   TextColor="Gray" />
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
+                                <Image Source="edit_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                                <Image Source="delete_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
                             </StackLayout>
                         </Grid>
                     </Frame>
