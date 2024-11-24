@@ -34,7 +34,10 @@
                         BackgroundColor="#1565C0" 
                         TextColor="White" 
                         Clicked="OnCanalClicked"/>
-                <Button Text="Sair" BackgroundColor="#FF1744" TextColor="White" />
+                <Button Text="Sair" 
+                        BackgroundColor="#FF1744" 
+                        TextColor="White" 
+                        Clicked="OnSairClicked"/>
             </StackLayout>
 
             <StackLayout Grid.Column="1" Padding="10">

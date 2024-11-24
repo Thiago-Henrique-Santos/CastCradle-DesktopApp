@@ -31,5 +31,11 @@ namespace CastCradleDesktopApp
             await Navigation.PushAsync(new CanalPage());
         }
 
+        private async void OnSairClicked(object sender, EventArgs e)
+        {
+            var mainViewModel = new ViewModel.MainViewModel();
+            await Navigation.PushAsync(new MainPage(mainViewModel));
+        }
+
     }
 }

@@ -35,7 +35,10 @@
                         TextColor="White" 
                         Clicked="OnPlaylistsClicked"/>
                 <Button Text="Canal" BackgroundColor="#1565C0" TextColor="White" />
-                <Button Text="Sair" BackgroundColor="#FF1744" TextColor="White" />
+                <Button Text="Sair" 
+                        BackgroundColor="#FF1744" 
+                        TextColor="White" 
+                        Clicked="OnSairClicked"/>
             </StackLayout>
 
             <StackLayout Grid.Column="1" Spacing="20" Padding="20">
