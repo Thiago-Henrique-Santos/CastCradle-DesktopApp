@@ -1,15 +1,15 @@
 namespace CastCradleDesktopApp;
 
-public partial class UploadPage : ContentPage
+public partial class AudiosPage : ContentPage
 {
-	public UploadPage()
+	public AudiosPage()
 	{
 		InitializeComponent();
 	}
 
-    private async void OnCancelClicked(object sender, EventArgs e)
+    private async void OnPublicarClicked(object sender, EventArgs e)
     {
-        await Navigation.PopAsync();
+        await Navigation.PushAsync(new UploadPage());
     }
 
     private async void OnDashboardClicked(object sender, EventArgs e)
@@ -21,10 +21,4 @@ public partial class UploadPage : ContentPage
     {
         await Navigation.PushAsync(new VideosPage());
     }
-
-    private async void OnAudiosClicked(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new AudiosPage());
-    }
-
 }

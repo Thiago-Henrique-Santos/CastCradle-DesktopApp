@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CastCradleDesktopApp.VideosPage"
-             Title="Seus vídeos">
+             x:Class="CastCradleDesktopApp.AudiosPage"
+             Title="Seus áudios">
+
     <ScrollView>
+
         <Grid RowDefinitions="Auto, *" ColumnDefinitions="200, *">
 
             <StackLayout BackgroundColor="#223D5C" Grid.RowSpan="2" Padding="20" Spacing="20">
@@ -21,11 +23,11 @@
                         BackgroundColor="#1565C0" 
                         TextColor="White"
                         Clicked="OnPublicarClicked"/>
-                <Button Text="Vídeos" BackgroundColor="#1565C0" TextColor="White"/>
-                <Button Text="Áudios" 
+                <Button Text="Vídeos" 
                         BackgroundColor="#1565C0" 
-                        TextColor="White" 
-                        Clicked="OnAudiosClicked"/>
+                        TextColor="White"
+                        Clicked="OnVideosClicked"/>
+                <Button Text="Áudios" BackgroundColor="#1565C0" TextColor="White" />
                 <Button Text="Playlists" BackgroundColor="#1565C0" TextColor="White" />
                 <Button Text="Canal" BackgroundColor="#1565C0" TextColor="White" />
                 <Button Text="Sair" BackgroundColor="#FF1744" TextColor="White" />
@@ -69,9 +71,48 @@
                                    FontSize="12"
                                    Grid.Column="1"
                                    Grid.Row="1"
-                                   TextColor="#1D1B20" />
+                                   TextColor="#1D1B20"/>
 
                             <Label Text="Visualizações: 32K  Data de publicação: 09/10/2024"
+                                   FontSize="10"
+                                   Grid.Column="1"
+                                   Grid.Row="2"
+                                   TextColor="Gray"/>
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
+                                <Image Source="edit_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                                <Image Source="delete_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Margin="0">
+                        <Grid RowDefinitions="Auto,Auto,Auto"
+                              ColumnDefinitions="Auto,*,Auto"
+                              ColumnSpacing="10">
+                            <Image Source="video_thumbnail2.png"
+                                   WidthRequest="50"
+                                   HeightRequest="50"
+                                   VerticalOptions="Center"
+                                   Grid.RowSpan="3"/>
+
+                            <Label Text="02 - REVISÃO DE ESTRUTURA DE PROTEÍNAS E SUA RELAÇÃO COM BIOINFORMÁTICA"
+                                   FontSize="14"
+                                   FontAttributes="Bold"
+                                   Grid.Column="1"
+                                   TextColor="#3A71B8"/>
+
+                            <Label Text="Determinação das estruturas secundárias e terciárias de proteínas..."
+                                   FontSize="12"
+                                   Grid.Column="1"
+                                   Grid.Row="1"
+                                   TextColor="#1D1B20" />
+
+                            <Label Text="Visualizações: 31K  Data de publicação: 09/10/2024"
                                    FontSize="10"
                                    Grid.Column="1"
                                    Grid.Row="2"
@@ -79,56 +120,19 @@
 
                             <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
                                 <Image Source="edit_icon.png"
-                                   HeightRequest="25"
-                                   WidthRequest="25" />
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
                                 <Image Source="delete_icon.png"
-                                   HeightRequest="25"
-                                   WidthRequest="25" />
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
                             </StackLayout>
                         </Grid>
                     </Frame>
 
-                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Margin="0">
-                        <Grid RowDefinitions="Auto,Auto,Auto"
-                          ColumnDefinitions="Auto,*,Auto"
-                          ColumnSpacing="10">
-                            <Image Source="video_thumbnail2.png"
-                               WidthRequest="50"
-                               HeightRequest="50"
-                               VerticalOptions="Center"
-                               Grid.RowSpan="3"/>
-
-                            <Label Text="02 - REVISÃO DE ESTRUTURA DE PROTEÍNAS E SUA RELAÇÃO COM BIOINFORMÁTICA"
-                               FontSize="14"
-                               FontAttributes="Bold"
-                               Grid.Column="1"
-                               TextColor="#3A71B8"/>
-
-                            <Label Text="Determinação das estruturas secundárias e terciárias de proteínas..."
-                               FontSize="12"
-                               Grid.Column="1"
-                               Grid.Row="1"
-                               TextColor="#1D1B20" />
-
-                            <Label Text="Visualizações: 31K  Data de publicação: 09/10/2024"
-                               FontSize="10"
-                               Grid.Column="1"
-                               Grid.Row="2"
-                               TextColor="Gray" />
-
-                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
-                                <Image Source="edit_icon.png"
-                                   HeightRequest="25"
-                                   WidthRequest="25" />
-                                <Image Source="delete_icon.png"
-                                   HeightRequest="25"
-                                   WidthRequest="25" />
-                            </StackLayout>
-                        </Grid>
-                    </Frame>
-                    
                 </StackLayout>
             </StackLayout>
         </Grid>
+
     </ScrollView>
+    
 </ContentPage>
