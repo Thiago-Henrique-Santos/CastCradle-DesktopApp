@@ -1,8 +1,8 @@
 namespace CastCradleDesktopApp;
 
-public partial class AudiosPage : ContentPage
+public partial class PlaylistsPage : ContentPage
 {
-	public AudiosPage()
+	public PlaylistsPage()
 	{
 		InitializeComponent();
 	}
@@ -22,8 +22,8 @@ public partial class AudiosPage : ContentPage
         await Navigation.PushAsync(new VideosPage());
     }
 
-    private async void OnPlaylistsClicked(object sender, EventArgs e)
+    private async void OnAudiosClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new PlaylistsPage());
+        await Navigation.PushAsync(new AudiosPage());
     }
 }

@@ -27,4 +27,9 @@ public partial class VideosPage : ContentPage
         await Navigation.PushAsync(new AudiosPage());
     }
 
+    private async void OnPlaylistsClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new PlaylistsPage());
+    }
+
 }

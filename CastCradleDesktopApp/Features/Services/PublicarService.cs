@@ -22,7 +22,6 @@ namespace CastCradleDesktopApp.Features.Services
             {
                 { new StringContent(request.Titulo), "Titulo" },
                 { new StringContent(request.Descricao), "Descricao" },
-                { new StringContent(request.Pergunta), "Pergunta" },
                 { new StringContent(request.TipoMedia), "TipoMedia" },
                 { new StringContent(request.TipoConteudo), "TipoConteudo" }
             };
