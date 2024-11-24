@@ -44,8 +44,17 @@
             <StackLayout Grid.Column="1" Spacing="20" Padding="20">
 
                 <StackLayout Orientation="Horizontal" Spacing="20">
-                    <Frame WidthRequest="100" HeightRequest="100" CornerRadius="50" BorderColor="#E0E0E0" BackgroundColor="#F5F5F5">
-                        <Image Source="upload_icon.png" Aspect="AspectFill" />
+                    <Frame WidthRequest="100" HeightRequest="100" CornerRadius="50" 
+                           BorderColor="#E0E0E0" BackgroundColor="#F5F5F5"
+                           Padding="0" IsClippedToBounds="True">
+                        <Image Source="avatar_perfil.png" 
+                               HorizontalOptions="Fill" VerticalOptions="Fill"
+                               HeightRequest="100" WidthRequest="100"
+                               Aspect="AspectFill">
+                            <Image.Clip>
+                                <EllipseGeometry Center="50,50" RadiusX="50" RadiusY="50" />
+                            </Image.Clip>
+                        </Image>
                     </Frame>
                     <Label Text="A foto de perfil será exibida como representação de seu canal, por exemplo junto de seus vídeos, no topo das playlists e na página inicial do seu canal. Recomendamos que utilize uma imagem de até 1MB com resolução de 512x512 pixels."
                            FontSize="12"
