@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CastCradleDesktopApp.UploadPage"
-             Title="UploadPage">
+             Title="Publicar conteúdo">
 
     <ScrollView>
         <Grid RowDefinitions="Auto, *" ColumnDefinitions="200, *">
@@ -11,7 +11,7 @@
                        FontSize="24" 
                        FontAttributes="Bold" 
                        TextColor="White"
-                       HorizontalOptions="Start" />
+                       HorizontalOptions="Start"/>
 
                 <Button Text="Dashboard" 
                         BackgroundColor="#1565C0" 
@@ -51,9 +51,44 @@
 
                     <Label Text="Tipo de Conteúdo" FontAttributes="Bold" />
                     <StackLayout Orientation="Horizontal" Spacing="10">
-                        <Button Text="Vídeo" BackgroundColor="#D3D3D3" />
-                        <Button Text="Música" BackgroundColor="#D3D3D3" />
-                        <Button Text="Podcast" BackgroundColor="#D3D3D3" />
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40" />
+                                <RowDefinition Height="40" />
+                                <RowDefinition Height="40" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <CheckBox x:Name="Video"
+                                      Grid.Row="0"
+                                      Grid.Column="0"
+                                      VerticalOptions="Center"/>
+                            <Label Text="Vídeo"
+                                   Grid.Row="0"
+                                   Grid.Column="1"
+                                   VerticalOptions="Center"/>
+
+                            <CheckBox x:Name="Musica"
+                                      Grid.Row="1"
+                                      Grid.Column="0"
+                                      VerticalOptions="Center"/>
+                            <Label Text="Música"
+                                   Grid.Row="1"
+                                   Grid.Column="1"
+                                   VerticalOptions="Center"/>
+
+                            <CheckBox x:Name="Podcast"
+                                      Grid.Row="2"
+                                      Grid.Column="0"
+                                      VerticalOptions="Center"/>
+                            <Label Text="Podcast"
+                                   Grid.Row="2"
+                                   Grid.Column="1"
+                                   VerticalOptions="Center"/>
+                        </Grid>
                     </StackLayout>
 
                     <Label Text="Playlist" FontAttributes="Bold" />
