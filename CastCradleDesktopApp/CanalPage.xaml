@@ -2,57 +2,55 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CastCradleDesktopApp.CanalPage"
-             Title="CanalPage">
+             Title="Seu canal">
 
     <ScrollView>
         <Grid RowDefinitions="Auto, *" ColumnDefinitions="200, *">
 
             <StackLayout BackgroundColor="#223D5C" Grid.RowSpan="2" Padding="20" Spacing="20">
                 <Label Text="Cast Cradle" 
-                   FontSize="24" 
-                   FontAttributes="Bold" 
-                   TextColor="White"
-                   HorizontalOptions="Start" />
+                       FontSize="24" 
+                       FontAttributes="Bold" 
+                       TextColor="White"
+                       HorizontalOptions="Start" />
 
                 <Button Text="Dashboard" 
-                    BackgroundColor="#1565C0" 
-                    TextColor="White"
-                    Clicked="OnDashboardClicked"/>
+                        BackgroundColor="#1565C0" 
+                        TextColor="White"
+                        Clicked="OnDashboardClicked"/>
                 <Button Text="Publicar" 
-                    BackgroundColor="#1565C0" 
-                    TextColor="White"
-                    Clicked="OnPublicarClicked"/>
+                        BackgroundColor="#1565C0" 
+                        TextColor="White"
+                        Clicked="OnPublicarClicked"/>
                 <Button Text="Vídeos" 
                         BackgroundColor="#1565C0" 
                         TextColor="White"
                         Clicked="OnVideosClicked"/>
                 <Button Text="Áudios" 
-                    BackgroundColor="#1565C0" 
-                    TextColor="White" 
-                    Clicked="OnAudiosClicked"/>
+                        BackgroundColor="#1565C0" 
+                        TextColor="White" 
+                        Clicked="OnAudiosClicked"/>
                 <Button Text="Playlists" 
-                    BackgroundColor="#1565C0" 
-                    TextColor="White" 
-                    Clicked="OnPlaylistsClicked"/>
+                        BackgroundColor="#1565C0" 
+                        TextColor="White" 
+                        Clicked="OnPlaylistsClicked"/>
                 <Button Text="Canal" BackgroundColor="#1565C0" TextColor="White" />
                 <Button Text="Sair" BackgroundColor="#FF1744" TextColor="White" />
             </StackLayout>
 
             <StackLayout Grid.Column="1" Spacing="20" Padding="20">
 
-                <!-- Foto de Perfil -->
                 <StackLayout Orientation="Horizontal" Spacing="20">
                     <Frame WidthRequest="100" HeightRequest="100" CornerRadius="50" BorderColor="#E0E0E0" BackgroundColor="#F5F5F5">
-                        <Image Source="profile_placeholder.png" Aspect="AspectFill" />
+                        <Image Source="upload_icon.png" Aspect="AspectFill" />
                     </Frame>
-                    <Label Text="A foto de perfil será exibida como representação de seu canal, por exemplo junto de seus vídeos, no topo das playlists e na página inicial do seu canal. \nRecomendamos que utilize uma imagem de até 1MB com resolução de 512x512 pixels."
+                    <Label Text="A foto de perfil será exibida como representação de seu canal, por exemplo junto de seus vídeos, no topo das playlists e na página inicial do seu canal. Recomendamos que utilize uma imagem de até 1MB com resolução de 512x512 pixels."
                            FontSize="12"
                            TextColor="#1D1B20"
                            VerticalOptions="Center"
                            HorizontalOptions="FillAndExpand" />
                 </StackLayout>
 
-                <!-- Banner do Perfil -->
                 <StackLayout Orientation="Horizontal" Spacing="20">
                     <Frame WidthRequest="300" HeightRequest="100" BorderColor="#E0E0E0" BackgroundColor="#F5F5F5" VerticalOptions="Start">
                         <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
@@ -67,7 +65,6 @@
                            HorizontalOptions="FillAndExpand" />
                 </StackLayout>
 
-                <!-- Nome do Canal -->
                 <StackLayout>
                     <Label Text="Nome do canal" FontSize="14" FontAttributes="Bold" TextColor="#1D1B20" />
                     <Entry Placeholder="Nome do seu canal na CastCradle." />
@@ -76,20 +73,18 @@
                            TextColor="#6B6B6B" />
                 </StackLayout>
 
-                <!-- Descrição do Canal -->
                 <StackLayout>
                     <Label Text="Descrição do canal" FontSize="14" FontAttributes="Bold" TextColor="#1D1B20" />
                     <Editor Placeholder="Espaço para inserir a descrição do conteúdo." HeightRequest="100" />
                 </StackLayout>
 
-                <!-- Botões -->
                 <StackLayout Orientation="Horizontal" HorizontalOptions="End" Spacing="10">
                     <Button Text="Cancelar alterações"
                             BackgroundColor="#FF1744"
                             TextColor="White"
                             CornerRadius="5" />
                     <Button Text="Confirmar alterações"
-                            BackgroundColor="#673AB7"
+                            BackgroundColor="#4A90E2"
                             TextColor="White"
                             CornerRadius="5" />
                 </StackLayout>
