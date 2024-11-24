@@ -67,29 +67,29 @@
                         <Grid RowDefinitions="Auto,Auto,Auto"
                               ColumnDefinitions="Auto,*,Auto"
                               ColumnSpacing="10">
-                            <Image Source="audio_thumbnail1.png"
-                                   WidthRequest="50"
-                                   HeightRequest="50"
+                            <Image Source="rock_apagao.jpg"
+                                   WidthRequest="85"
+                                   HeightRequest="85"
                                    VerticalOptions="Center"
                                    Grid.RowSpan="3"/>
 
-                            <Label Text="01 - Quatro Estações"
-                                   FontSize="14"
+                            <Label Text="01 - ROCK DO APAGÃO"
+                                   FontSize="16"
                                    FontAttributes="Bold"
                                    Grid.Column="1"
                                    TextColor="#3A71B8"/>
 
-                            <Label Text="Música de Vival/Canastra Musical"
-                                   FontSize="12"
+                            <Label Text="Música"
+                                   FontSize="14"
                                    Grid.Column="1"
                                    Grid.Row="1"
-                                   TextColor="#1D1B20"/>
+                                   TextColor="#1D1B20" />
 
-                            <Label Text="Visualizações: 32K  Data de publicação: 09/10/2024"
-                                   FontSize="10"
+                            <Label Text="Visualizações: 12 | Data de publicação: 09/11/2024"
+                                   FontSize="12"
                                    Grid.Column="1"
                                    Grid.Row="2"
-                                   TextColor="Gray"/>
+                                   TextColor="Gray" />
 
                             <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
                                 <Image Source="edit_icon.png"
@@ -106,26 +106,26 @@
                         <Grid RowDefinitions="Auto,Auto,Auto"
                               ColumnDefinitions="Auto,*,Auto"
                               ColumnSpacing="10">
-                            <Image Source="video_thumbnail2.png"
-                                   WidthRequest="50"
-                                   HeightRequest="50"
+                            <Image Source="alan_turing.jpg"
+                                   WidthRequest="85"
+                                   HeightRequest="85"
                                    VerticalOptions="Center"
                                    Grid.RowSpan="3"/>
 
-                            <Label Text="02 - Rock do Apagão"
-                                   FontSize="14"
+                            <Label Text="02 - ALAN TURING"
+                                   FontSize="16"
                                    FontAttributes="Bold"
                                    Grid.Column="1"
                                    TextColor="#3A71B8"/>
 
-                            <Label Text="Música feita por Choque Elétrico."
-                                   FontSize="12"
+                            <Label Text="Podcast"
+                                   FontSize="14"
                                    Grid.Column="1"
                                    Grid.Row="1"
                                    TextColor="#1D1B20" />
 
-                            <Label Text="Visualizações: 31K  Data de publicação: 09/10/2024"
-                                   FontSize="10"
+                            <Label Text="Visualizações: 10 |  Data de publicação: 09/11/2024"
+                                   FontSize="12"
                                    Grid.Column="1"
                                    Grid.Row="2"
                                    TextColor="Gray" />
@@ -137,6 +137,162 @@
                                 <Image Source="delete_icon.png"
                                        HeightRequest="25"
                                        WidthRequest="25" />
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Margin="0">
+                        <Grid RowDefinitions="Auto,Auto,Auto"
+                              ColumnDefinitions="Auto,*,Auto"
+                              ColumnSpacing="10">
+                            <Image Source="as_quatro_estacoes.jpg"
+                                   WidthRequest="85"
+                                   HeightRequest="85"
+                                   VerticalOptions="Center"
+                                   Grid.RowSpan="3"/>
+
+                            <Label Text="03 - AS QUATRO ESTAÇÕES"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   Grid.Column="1"
+                                   TextColor="#3A71B8"/>
+
+                            <Label Text="Música"
+                                   FontSize="14"
+                                   Grid.Column="1"
+                                   Grid.Row="1"
+                                   TextColor="#1D1B20" />
+
+                            <Label Text="Visualizações: 5 | Data de publicação: 09/11/2024"
+                                   FontSize="12"
+                                   Grid.Column="1"
+                                   Grid.Row="2"
+                                   TextColor="Gray" />
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
+                                <Image Source="edit_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                                <Image Source="delete_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Margin="0">
+                        <Grid RowDefinitions="Auto,Auto,Auto"
+                              ColumnDefinitions="Auto,*,Auto"
+                              ColumnSpacing="10">
+                            <Image Source="tendencias_ti.png"
+                                   WidthRequest="85"
+                                   HeightRequest="85"
+                                   VerticalOptions="Center"
+                                   Grid.RowSpan="3"/>
+
+                            <Label Text="04 - TENDÊNCIA PARA O PRÓXIMO ANO NA ÁREA DE TI"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   Grid.Column="1"
+                                   TextColor="#3A71B8"/>
+
+                            <Label Text="Podcast."
+                                   FontSize="14"
+                                   Grid.Column="1"
+                                   Grid.Row="1"
+                                   TextColor="#1D1B20" />
+
+                            <Label Text="Visualizações: 1 | Data de publicação: 09/10/2024"
+                                   FontSize="12"
+                                   Grid.Column="1"
+                                   Grid.Row="2"
+                                   TextColor="Gray" />
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
+                                <Image Source="edit_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                                <Image Source="delete_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Margin="0">
+                        <Grid RowDefinitions="Auto,Auto,Auto"
+                              ColumnDefinitions="Auto,*,Auto"
+                              ColumnSpacing="10">
+                            <Image Source="ia_cotidiano.jpg"
+                                   WidthRequest="85"
+                                   HeightRequest="85"
+                                   VerticalOptions="Center"
+                                   Grid.RowSpan="3"/>
+
+                            <Label Text="05 - INTELIGÊNCIA ARTIFICIAL NO COTIDIANO | PODCAST"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   Grid.Column="1"
+                                   TextColor="#3A71B8"/>
+
+                            <Label Text="Podcast"
+                                   FontSize="14"
+                                   Grid.Column="1"
+                                   Grid.Row="1"
+                                   TextColor="#1D1B20" />
+
+                            <Label Text="Visualizações: 4 | Data de publicação: 09/10/2024"
+                                   FontSize="12"
+                                   Grid.Column="1"
+                                   Grid.Row="2"
+                                   TextColor="Gray" />
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
+                                <Image Source="edit_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                                <Image Source="delete_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Margin="0">
+                        <Grid RowDefinitions="Auto,Auto,Auto"
+                              ColumnDefinitions="Auto,*,Auto"
+                              ColumnSpacing="10">
+                            <Image Source="bateria.png"
+                                   WidthRequest="85"
+                                   HeightRequest="85"
+                                   VerticalOptions="Center"
+                                   Grid.RowSpan="3"/>
+
+                            <Label Text="06 - TOQUES DE BATERIA"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   Grid.Column="1"
+                                   TextColor="#3A71B8"/>
+
+                            <Label Text="Música."
+                                   FontSize="14"
+                                   Grid.Column="1"
+                                   Grid.Row="1"
+                                   TextColor="#1D1B20" />
+
+                            <Label Text="Visualizações: 2 | Data de publicação: 09/10/2024"
+                                   FontSize="12"
+                                   Grid.Column="1"
+                                   Grid.Row="2"
+                                   TextColor="Gray" />
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
+                                <Image Source="edit_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                                <Image Source="delete_icon.png"
+                                        HeightRequest="25"
+                                        WidthRequest="25" />
                             </StackLayout>
                         </Grid>
                     </Frame>
