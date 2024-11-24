@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CastCradleDesktopApp.EditarPlaylistPage"
+             Title="Edite sua playlist">
+
+    <Grid RowDefinitions="Auto, *, Auto" ColumnDefinitions="200, *">
+
+        <StackLayout BackgroundColor="#223D5C" Grid.RowSpan="2" Padding="20" Spacing="20">
+            <Label Text="Cast Cradle" 
+                   FontSize="24" 
+                   FontAttributes="Bold" 
+                   TextColor="White"
+                   HorizontalOptions="Start" />
+
+            <Button Text="Dashboard" 
+                    BackgroundColor="#1565C0" 
+                    TextColor="White"
+                    Clicked="OnDashboardClicked"/>
+            <Button Text="Publicar" 
+                    BackgroundColor="#1565C0" 
+                    TextColor="White"
+                    Clicked="OnPublicarClicked"/>
+            <Button Text="Vídeos" 
+                    BackgroundColor="#1565C0" 
+                    TextColor="White"
+                    Clicked="OnVideosClicked"/>
+            <Button Text="Áudios" 
+                    BackgroundColor="#1565C0" 
+                    TextColor="White" 
+                    Clicked="OnAudiosClicked"/>
+            <Button Text="Playlists" BackgroundColor="#1565C0" TextColor="White" />
+            <Button Text="Canal" 
+                    BackgroundColor="#1565C0" 
+                    TextColor="White" 
+                    Clicked="OnCanalClicked"/>
+            <Button Text="Sair" 
+                    BackgroundColor="#FF1744" 
+                    TextColor="White" 
+                    Clicked="OnSairClicked"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="0" Grid.Column="1" Padding="20">
+            <StackLayout Padding="10" Spacing="20" BackgroundColor="#F7F7F7">
+
+                <!-- Campo Título -->
+                <Label Text="Título" FontAttributes="Bold" />
+                <Entry Placeholder="Digite o título da playlist" />
+
+                <!-- Campo Descrição -->
+                <Label Text="Descrição" FontAttributes="Bold" />
+                <Editor Placeholder="Digite a descrição aqui" HeightRequest="100" />
+
+                <!-- Botão para adicionar conteúdo -->
+                <Button Text="+ Adicionar conteúdo na playlist" 
+                        BackgroundColor="#1565C0" 
+                        TextColor="White" 
+                        CornerRadius="8" />
+
+            </StackLayout>
+
+            <!-- Botões de ação -->
+            <Grid ColumnDefinitions="*, *" Margin="0, 20, 0, 0" ColumnSpacing="10">
+                <Button Text="Cancelar alterações" 
+                        BackgroundColor="#FF1744" 
+                        TextColor="White" 
+                        CornerRadius="8" 
+                        Clicked="OnCancelClicked"/>
+                <Button Text="Publicar alterações" 
+                        BackgroundColor="#1565C0" 
+                        TextColor="White" 
+                        CornerRadius="8" Grid.Column="1" />
+            </Grid>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

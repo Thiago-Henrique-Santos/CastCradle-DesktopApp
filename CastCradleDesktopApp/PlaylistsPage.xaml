@@ -92,12 +92,13 @@
                                    TextColor="Gray" />
 
                             <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
-                                <Image Source="edit_icon.png"
+                                <ImageButton Source="edit_icon.png"
                                        HeightRequest="25"
-                                       WidthRequest="25" />
-                                <Image Source="delete_icon.png"
+                                       WidthRequest="25"
+                                       Clicked="OnEditClicked"/>
+                                <ImageButton Source="delete_icon.png"
                                        HeightRequest="25"
-                                       WidthRequest="25" />
+                                       WidthRequest="25"/>
                             </StackLayout>
                         </Grid>
                     </Frame>
@@ -131,12 +132,13 @@
                                    TextColor="Gray" />
 
                             <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
-                                <Image Source="edit_icon.png"
-                                       HeightRequest="25"
-                                       WidthRequest="25" />
-                                <Image Source="delete_icon.png"
-                                       HeightRequest="25"
-                                       WidthRequest="25" />
+                                <ImageButton Source="edit_icon.png"
+                                             HeightRequest="25"
+                                             WidthRequest="25"
+                                             Clicked="OnEditClicked"/>
+                                <ImageButton Source="delete_icon.png"
+                                             HeightRequest="25"
+                                             WidthRequest="25"/>
                             </StackLayout>
                         </Grid>
                     </Frame>
@@ -170,12 +172,13 @@
                                    TextColor="Gray" />
 
                             <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
-                                <Image Source="edit_icon.png"
-                                       HeightRequest="25"
-                                       WidthRequest="25"/>
-                                <Image Source="delete_icon.png"
-                                       HeightRequest="25"
-                                       WidthRequest="25"/>
+                                <ImageButton Source="edit_icon.png"
+                                             HeightRequest="25"
+                                             WidthRequest="25"
+                                             Clicked="OnEditClicked"/>
+                                <ImageButton Source="delete_icon.png"
+                                             HeightRequest="25"
+                                             WidthRequest="25"/>
                             </StackLayout>
                         </Grid>
                     </Frame>
@@ -209,12 +212,13 @@
                                    TextColor="Gray" />
 
                             <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
-                                <Image Source="edit_icon.png"
-                                       HeightRequest="25"
-                                       WidthRequest="25" />
-                                <Image Source="delete_icon.png"
-                                       HeightRequest="25"
-                                       WidthRequest="25" />
+                                <ImageButton Source="edit_icon.png"
+                                             HeightRequest="25"
+                                             WidthRequest="25"
+                                             Clicked="OnEditClicked"/>
+                                <ImageButton Source="delete_icon.png"
+                                             HeightRequest="25"
+                                             WidthRequest="25"/>
                             </StackLayout>
                         </Grid>
                     </Frame>
@@ -248,12 +252,13 @@
                                    TextColor="Gray" />
 
                             <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
-                                <Image Source="edit_icon.png"
-                                       HeightRequest="25"
-                                       WidthRequest="25" />
-                                <Image Source="delete_icon.png"
-                                       HeightRequest="25"
-                                       WidthRequest="25" />
+                                <ImageButton Source="edit_icon.png"
+                                             HeightRequest="25"
+                                             WidthRequest="25"
+                                             Clicked="OnEditClicked"/>
+                                <ImageButton Source="delete_icon.png"
+                                             HeightRequest="25"
+                                             WidthRequest="25"/>
                             </StackLayout>
                         </Grid>
                     </Frame>
@@ -287,12 +292,13 @@
                                    TextColor="Gray" />
 
                             <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
-                                <Image Source="edit_icon.png"
-                                       HeightRequest="25"
-                                       WidthRequest="25" />
-                                <Image Source="delete_icon.png"
-                                       HeightRequest="25"
-                                       WidthRequest="25" />
+                                <ImageButton Source="edit_icon.png"
+                                             HeightRequest="25"
+                                             WidthRequest="25"
+                                             Clicked="OnEditClicked"/>
+                                <ImageButton Source="delete_icon.png"
+                                             HeightRequest="25"
+                                             WidthRequest="25"/>
                             </StackLayout>
                         </Grid>
                     </Frame>
