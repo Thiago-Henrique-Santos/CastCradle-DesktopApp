@@ -41,15 +41,6 @@
         </StackLayout>
 
         <StackLayout Grid.Row="0" Grid.Column="1" Padding="20">
-            <Label Text="Gráfico Setorial de Visualizações por Conteúdo e Inscrições no Canal" FontSize="18" FontAttributes="Bold" Margin="0, 0, 0, 20"/>
-
-            <Grid HorizontalOptions="Center" VerticalOptions="Center">
-                <Ellipse WidthRequest="200" HeightRequest="200" Fill="#00C8C8" HorizontalOptions="Center"/>
-                <Ellipse WidthRequest="150" HeightRequest="150" Fill="#0067FF" HorizontalOptions="Center" VerticalOptions="Center"/>
-                <Ellipse WidthRequest="100" HeightRequest="100" Fill="#AA00FF" HorizontalOptions="Center" VerticalOptions="Center"/>
-                <Ellipse WidthRequest="50" HeightRequest="50" Fill="#FF5C00" HorizontalOptions="Center" VerticalOptions="Center"/>
-            </Grid>
-
             <Grid Margin="0, 20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
