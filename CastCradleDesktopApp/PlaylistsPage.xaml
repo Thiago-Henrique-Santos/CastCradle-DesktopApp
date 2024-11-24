@@ -36,27 +36,27 @@
                 <Button Text="Sair" BackgroundColor="#FF1744" TextColor="White" />
             </StackLayout>
 
-            <!-- Conteúdo Principal -->
             <StackLayout Grid.Column="1" Padding="20" Spacing="10">
-                <!-- Header com botão e pesquisa -->
                 <Grid ColumnDefinitions="Auto,*,Auto" VerticalOptions="Start">
                     <Button Text="+ Criar nova playlist"
-                        BackgroundColor="#4A90E2"
-                        TextColor="White"
-                        FontAttributes="Bold"
-                        CornerRadius="5"
-                        Margin="0,0,10,0" />
+                            Grid.Column="0"
+                            BackgroundColor="#4A90E2"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            CornerRadius="5"
+                            Margin="0,0,10,0" />
                     <Entry Placeholder="Pesquisar conteúdo"
-                       HorizontalOptions="FillAndExpand"
-                       Margin="0,0,10,0" />
+                           Grid.Column="1"
+                           HorizontalOptions="FillAndExpand"
+                           Margin="0,0,10,0" />
                     <Image Source="search_icon.png"
-                       HeightRequest="25"
-                       WidthRequest="25"
-                       VerticalOptions="Center" />
+                           Grid.Column="2"
+                           HeightRequest="25"
+                           WidthRequest="25"
+                           VerticalOptions="Center" />
                 </Grid>
 
                 <StackLayout Spacing="15">
-                    <!-- Primeiro Cartão -->
                     <Frame BackgroundColor="White" CornerRadius="10" Padding="10" BorderColor="#E0E0E0">
                         <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto" ColumnSpacing="10">
                             <Image Source="icon_video.png"
@@ -90,7 +90,6 @@
                         </Grid>
                     </Frame>
 
-                    <!-- Segundo Cartão -->
                     <Frame BackgroundColor="White" CornerRadius="10" Padding="10" BorderColor="#E0E0E0">
                         <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto" ColumnSpacing="10">
                             <Image Source="icon_audio.png"
@@ -124,7 +123,6 @@
                         </Grid>
                     </Frame>
 
-                    <!-- Outros cartões podem ser replicados aqui -->
                 </StackLayout>
             </StackLayout>
         </Grid>

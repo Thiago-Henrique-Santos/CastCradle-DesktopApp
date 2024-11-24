@@ -37,17 +37,20 @@
             </StackLayout>
 
             <StackLayout Grid.Column="1" Padding="10">
-                <Grid ColumnDefinitions="*,Auto,Auto" Margin="0,0,0,20">
+                <Grid ColumnDefinitions="Auto,*,Auto" Margin="0,0,0,20">
                     <Button Text="+ Publicar novo conteúdo"
-                            BackgroundColor="#005AA3"
+                            Grid.Column="0"
+                            BackgroundColor="#4A90E2"
                             TextColor="White"
                             FontAttributes="Bold"
                             CornerRadius="5"
                             Margin="0,0,10,0"/>
                     <Entry Placeholder="Pesquisar conteúdo"
+                           Grid.Column="1"
                            HorizontalOptions="FillAndExpand"
                            Margin="10,0"/>
                     <Image Source="search_icon.png"
+                           Grid.Column="2"
                            HeightRequest="25"
                            WidthRequest="25"
                            VerticalOptions="Center" />
