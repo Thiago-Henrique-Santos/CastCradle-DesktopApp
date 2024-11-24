@@ -42,4 +42,5 @@ public partial class EditarPlaylistPage : ContentPage
     {
         await Navigation.PopAsync();
     }
+
 }

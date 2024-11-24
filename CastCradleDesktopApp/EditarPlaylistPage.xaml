@@ -43,15 +43,12 @@
         <StackLayout Grid.Row="0" Grid.Column="1" Padding="20">
             <StackLayout Padding="10" Spacing="20" BackgroundColor="#F7F7F7">
 
-                <!-- Campo Título -->
                 <Label Text="Título" FontAttributes="Bold" />
                 <Entry Placeholder="Digite o título da playlist" />
 
-                <!-- Campo Descrição -->
                 <Label Text="Descrição" FontAttributes="Bold" />
                 <Editor Placeholder="Digite a descrição aqui" HeightRequest="100" />
 
-                <!-- Botão para adicionar conteúdo -->
                 <Button Text="+ Adicionar conteúdo na playlist" 
                         BackgroundColor="#1565C0" 
                         TextColor="White" 
@@ -59,7 +56,6 @@
 
             </StackLayout>
 
-            <!-- Botões de ação -->
             <Grid ColumnDefinitions="*, *" Margin="0, 20, 0, 0" ColumnSpacing="10">
                 <Button Text="Cancelar alterações" 
                         BackgroundColor="#FF1744" 
