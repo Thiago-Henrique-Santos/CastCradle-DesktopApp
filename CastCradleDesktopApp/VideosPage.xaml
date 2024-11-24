@@ -65,26 +65,26 @@
                         <Grid RowDefinitions="Auto,Auto,Auto"
                               ColumnDefinitions="Auto,*,Auto"
                               ColumnSpacing="10">
-                            <Image Source="video_thumbnail1.png"
-                                   WidthRequest="50"
-                                   HeightRequest="50"
+                            <Image Source="introducao_bioinformatica.png"
+                                   WidthRequest="85"
+                                   HeightRequest="85"
                                    VerticalOptions="Center"
                                    Grid.RowSpan="3"/>
 
                             <Label Text="01 - INTRODUÇÃO À BIOINFORMÁTICA"
-                                   FontSize="14"
+                                   FontSize="16"
                                    FontAttributes="Bold"
                                    Grid.Column="1"
                                    TextColor="#3A71B8"/>
 
-                            <Label Text="Visão geral da intersecção entre programação, big data, genética, genômica e proteômica."
-                                   FontSize="12"
+                            <Label Text="Bioinformática e programação."
+                                   FontSize="14"
                                    Grid.Column="1"
                                    Grid.Row="1"
                                    TextColor="#1D1B20" />
 
-                            <Label Text="Visualizações: 32K  Data de publicação: 09/10/2024"
-                                   FontSize="10"
+                            <Label Text="Visualizações: 20 | Data de publicação: 09/11/2024"
+                                   FontSize="12"
                                    Grid.Column="1"
                                    Grid.Row="2"
                                    TextColor="Gray" />
@@ -104,26 +104,26 @@
                         <Grid RowDefinitions="Auto,Auto,Auto"
                           ColumnDefinitions="Auto,*,Auto"
                           ColumnSpacing="10">
-                            <Image Source="video_thumbnail2.png"
-                               WidthRequest="50"
-                               HeightRequest="50"
+                            <Image Source="proteinas_bioinformatica.jpg"
+                               WidthRequest="85"
+                               HeightRequest="85"
                                VerticalOptions="Center"
                                Grid.RowSpan="3"/>
 
                             <Label Text="02 - REVISÃO DE ESTRUTURA DE PROTEÍNAS E SUA RELAÇÃO COM BIOINFORMÁTICA"
-                               FontSize="14"
+                               FontSize="16"
                                FontAttributes="Bold"
                                Grid.Column="1"
                                TextColor="#3A71B8"/>
 
-                            <Label Text="Determinação das estruturas secundárias e terciárias de proteínas..."
-                               FontSize="12"
+                            <Label Text="Bioinformática e programação."
+                               FontSize="14"
                                Grid.Column="1"
                                Grid.Row="1"
                                TextColor="#1D1B20" />
 
-                            <Label Text="Visualizações: 31K  Data de publicação: 09/10/2024"
-                               FontSize="10"
+                            <Label Text="Visualizações: 2 |  Data de publicação: 09/11/2024"
+                               FontSize="12"
                                Grid.Column="1"
                                Grid.Row="2"
                                TextColor="Gray" />
@@ -138,7 +138,163 @@
                             </StackLayout>
                         </Grid>
                     </Frame>
-                    
+
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Margin="0">
+                        <Grid RowDefinitions="Auto,Auto,Auto"
+                              ColumnDefinitions="Auto,*,Auto"
+                              ColumnSpacing="10">
+                            <Image Source="shellscript.png"
+                                   WidthRequest="85"
+                                   HeightRequest="85"
+                                   VerticalOptions="Center"
+                                   Grid.RowSpan="3"/>
+
+                            <Label Text="03 - SHELL SCRIPT"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   Grid.Column="1"
+                                   TextColor="#3A71B8"/>
+
+                            <Label Text="Prompt e programação."
+                                   FontSize="14"
+                                   Grid.Column="1"
+                                   Grid.Row="1"
+                                   TextColor="#1D1B20" />
+
+                            <Label Text="Visualizações: 19 | Data de publicação: 09/11/2024"
+                                   FontSize="12"
+                                   Grid.Column="1"
+                                   Grid.Row="2"
+                                   TextColor="Gray" />
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
+                                <Image Source="edit_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                                <Image Source="delete_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Margin="0">
+                        <Grid RowDefinitions="Auto,Auto,Auto"
+                              ColumnDefinitions="Auto,*,Auto"
+                              ColumnSpacing="10">
+                            <Image Source="lp_ludica.jpeg"
+                                   WidthRequest="85"
+                                   HeightRequest="85"
+                                   VerticalOptions="Center"
+                                   Grid.RowSpan="3"/>
+
+                            <Label Text="04 - CONTEÚDO LÚDICO PARA LÓGICA DE PROGRAMAÇÃO"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   Grid.Column="1"
+                                   TextColor="#3A71B8"/>
+
+                            <Label Text="Programação."
+                                   FontSize="14"
+                                   Grid.Column="1"
+                                   Grid.Row="1"
+                                   TextColor="#1D1B20" />
+
+                            <Label Text="Visualizações: 1 | Data de publicação: 09/10/2024"
+                                   FontSize="12"
+                                   Grid.Column="1"
+                                   Grid.Row="2"
+                                   TextColor="Gray" />
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
+                                <Image Source="edit_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                                <Image Source="delete_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Margin="0">
+                        <Grid RowDefinitions="Auto,Auto,Auto"
+                              ColumnDefinitions="Auto,*,Auto"
+                              ColumnSpacing="10">
+                            <Image Source="graduacoes_ti.png"
+                                   WidthRequest="85"
+                                   HeightRequest="85"
+                                   VerticalOptions="Center"
+                                   Grid.RowSpan="3"/>
+
+                            <Label Text="05 - GRADUAÇÕES NA ÁREA DE TI"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   Grid.Column="1"
+                                   TextColor="#3A71B8"/>
+
+                            <Label Text="Tecnologia da informação."
+                                   FontSize="14"
+                                   Grid.Column="1"
+                                   Grid.Row="1"
+                                   TextColor="#1D1B20" />
+
+                            <Label Text="Visualizações: 4 | Data de publicação: 09/10/2024"
+                                    FontSize="12"
+                                    Grid.Column="1"
+                                    Grid.Row="2"
+                                    TextColor="Gray" />
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
+                                <Image Source="edit_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                                <Image Source="delete_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Margin="0">
+                        <Grid RowDefinitions="Auto,Auto,Auto"
+                              ColumnDefinitions="Auto,*,Auto"
+                              ColumnSpacing="10">
+                            <Image Source="tecnologia_5g.jpeg"
+                                   WidthRequest="85"
+                                   HeightRequest="85"
+                                   VerticalOptions="Center"
+                                   Grid.RowSpan="3"/>
+
+                            <Label Text="06 - TECNOLOGIA 5G"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   Grid.Column="1"
+                                   TextColor="#3A71B8"/>
+
+                            <Label Text="Redes."
+                                   FontSize="14"
+                                   Grid.Column="1"
+                                   Grid.Row="1"
+                                   TextColor="#1D1B20" />
+
+                            <Label Text="Visualizações: 2 | Data de publicação: 09/10/2024"
+                                   FontSize="12"
+                                   Grid.Column="1"
+                                   Grid.Row="2"
+                                   TextColor="Gray" />
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="3" VerticalOptions="Center" Spacing="10">
+                                <Image Source="edit_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                                <Image Source="delete_icon.png"
+                                       HeightRequest="25"
+                                       WidthRequest="25" />
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+
                 </StackLayout>
             </StackLayout>
         </Grid>
