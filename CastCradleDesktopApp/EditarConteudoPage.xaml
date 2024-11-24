@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CastCradleDesktopApp.EditarConteudoPage"
+             Title="Editar conteúdo">
+
+    <ScrollView>
+        <Grid RowDefinitions="Auto, *" ColumnDefinitions="200, *">
+
+            <StackLayout BackgroundColor="#223D5C" Grid.RowSpan="2" Padding="20" Spacing="20">
+                <Label Text="Cast Cradle" 
+                       FontSize="24" 
+                       FontAttributes="Bold" 
+                       TextColor="White"
+                       HorizontalOptions="Start"/>
+
+                <Button Text="Dashboard" 
+                        BackgroundColor="#1565C0" 
+                        TextColor="White"
+                        Clicked="OnDashboardClicked"/>
+                <Button Text="Publicar" 
+                        BackgroundColor="#1565C0" 
+                        TextColor="White"
+                        Clicked="OnPublicarClicked"/>
+                <Button Text="Vídeos" 
+                        BackgroundColor="#1565C0" 
+                        TextColor="White"
+                        Clicked="OnVideosClicked"/>
+                <Button Text="Áudios" 
+                        BackgroundColor="#1565C0" 
+                        TextColor="White" 
+                        Clicked="OnAudiosClicked"/>
+                <Button Text="Playlists" 
+                        BackgroundColor="#1565C0" 
+                        TextColor="White" 
+                        Clicked="OnPlaylistsClicked"/>
+                <Button Text="Canal" 
+                        BackgroundColor="#1565C0" 
+                        TextColor="White" 
+                        Clicked="OnCanalClicked"/>
+                <Button Text="Sair" 
+                        BackgroundColor="#FF1744" 
+                        TextColor="White" 
+                        Clicked="OnSairClicked"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="1" Padding="20" Spacing="20">
+                <Label Text="Título" FontSize="18" FontAttributes="Bold" TextColor="#1D1B20"/>
+                <Entry Placeholder="Insira o título do conteúdo"
+                       BackgroundColor="#F2F2F2"
+                       Margin="0,0,0,10"/>
+
+                <Label Text="Descrição" FontSize="18" FontAttributes="Bold" TextColor="#1D1B20"/>
+                <Editor Placeholder="Espaço para inserir a descrição do conteúdo."
+                        BackgroundColor="#F2F2F2"
+                        HeightRequest="100"
+                        Margin="0,0,0,10"/>
+
+                <Label Text="Upload de Imagem" FontSize="18" FontAttributes="Bold" TextColor="#1D1B20"/>
+                <Frame BackgroundColor="#E0E0E0" Padding="30" HorizontalOptions="StartAndExpand" CornerRadius="10">
+                    <Image Source="upload_icon.png" WidthRequest="50" HeightRequest="50"/>
+                </Frame>
+
+                <Label Text="Tipo de Conteúdo" FontSize="18" FontAttributes="Bold" TextColor="#1D1B20"/>
+                <Picker Title="Selecione" BackgroundColor="#F2F2F2">
+                    <Picker.Items>
+                        <x:String>Vídeo</x:String>
+                        <x:String>Música</x:String>
+                        <x:String>Podcast</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Playlist" FontSize="18" FontAttributes="Bold" TextColor="#1D1B20"/>
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="40" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <CheckBox x:Name="Playlist1"
+                                  Grid.Row="0"
+                                  Grid.Column="0"
+                                  VerticalOptions="Center"/>
+                        <Label Text="01 - ROTINA DE UM DESENVOLVEDOR FULLSTACK SENIOR"
+                               Grid.Row="0"
+                               Grid.Column="1"
+                               VerticalOptions="Center"/>
+
+                        <CheckBox x:Name="Playlist2"
+                                  Grid.Row="1"
+                                  Grid.Column="0"
+                                  VerticalOptions="Center"/>
+                        <Label Text="02 - PODNOSTALKS"
+                               Grid.Row="1"
+                               Grid.Column="1"
+                               VerticalOptions="Center"/>
+
+                        <CheckBox x:Name="Playlist3"
+                                  Grid.Row="2"
+                                  Grid.Column="0"
+                                  VerticalOptions="Center"/>
+                        <Label Text="03 - LO-FI PARA PROGRAMAR"
+                               Grid.Row="2"
+                               Grid.Column="1"
+                               VerticalOptions="Center"/>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20" Margin="20,0,0,0">
+                    <Button Text="Cancelar alterações"
+                            BackgroundColor="#FF1744"
+                            TextColor="White"
+                            CornerRadius="5"/>
+                    <Button Text="Publicar alterações"
+                            BackgroundColor="#4CAF50"
+                            TextColor="White"
+                            CornerRadius="5"/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>

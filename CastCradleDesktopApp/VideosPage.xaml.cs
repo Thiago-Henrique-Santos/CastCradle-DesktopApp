@@ -43,5 +43,10 @@ namespace CastCradleDesktopApp
             await Navigation.PushAsync(new MainPage(mainViewModel));
         }
 
+        private async void OnEditClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new EditarConteudoPage());
+        }
+
     }
 }
