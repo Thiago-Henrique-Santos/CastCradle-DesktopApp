@@ -45,53 +45,28 @@
 
                 <StackLayout Spacing="10">
                     <Entry  Placeholder="Título do conteúdo" />
+
+                    <Label Text="Upload de Thumbnail" FontSize="18" FontAttributes="Bold" TextColor="#1D1B20"/>
+                    <Frame BackgroundColor="#E0E0E0" Padding="30" HorizontalOptions="StartAndExpand" CornerRadius="10">
+                        <Image Source="upload_icon.png" WidthRequest="50" HeightRequest="50"/>
+                    </Frame>
+
                     <Editor Placeholder="Descrição do conteúdo" AutoSize="TextChanges" HeightRequest="100" />
 
                     <Button Text="Escolher Arquivo" BackgroundColor="#1565C0" TextColor="White" />
 
-                    <Label Text="Tipo de Conteúdo" FontAttributes="Bold" />
+                    <Label Text="Tipo de Conteúdo" FontSize="18" FontAttributes="Bold"/>
                     <StackLayout Orientation="Horizontal" Spacing="10">
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="40" />
-                                <RowDefinition Height="40" />
-                                <RowDefinition Height="40" />
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-
-                            <CheckBox x:Name="Video"
-                                      Grid.Row="0"
-                                      Grid.Column="0"
-                                      VerticalOptions="Center"/>
-                            <Label Text="Vídeo"
-                                   Grid.Row="0"
-                                   Grid.Column="1"
-                                   VerticalOptions="Center"/>
-
-                            <CheckBox x:Name="Musica"
-                                      Grid.Row="1"
-                                      Grid.Column="0"
-                                      VerticalOptions="Center"/>
-                            <Label Text="Música"
-                                   Grid.Row="1"
-                                   Grid.Column="1"
-                                   VerticalOptions="Center"/>
-
-                            <CheckBox x:Name="Podcast"
-                                      Grid.Row="2"
-                                      Grid.Column="0"
-                                      VerticalOptions="Center"/>
-                            <Label Text="Podcast"
-                                   Grid.Row="2"
-                                   Grid.Column="1"
-                                   VerticalOptions="Center"/>
-                        </Grid>
+                        <Picker WidthRequest="250" Title="Selecione" BackgroundColor="#F2F2F2">
+                            <Picker.Items>
+                                <x:String>Vídeo</x:String>
+                                <x:String>Música</x:String>
+                                <x:String>Podcast</x:String>
+                            </Picker.Items>
+                        </Picker>
                     </StackLayout>
 
-                    <Label Text="Playlist" FontAttributes="Bold" />
+                    <Label Text="Playlist" FontSize="18" FontAttributes="Bold"/>
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="40" />
@@ -107,7 +82,7 @@
                                   Grid.Row="0"
                                   Grid.Column="0"
                                   VerticalOptions="Center"/>
-                        <Label Text="Playlist 1"
+                        <Label Text="01 - ROTINA DE UM DESENVOLVEDOR FULLSTACK SENIOR"
                                Grid.Row="0"
                                Grid.Column="1"
                                VerticalOptions="Center"/>
@@ -116,7 +91,7 @@
                                   Grid.Row="1"
                                   Grid.Column="0"
                                   VerticalOptions="Center"/>
-                        <Label Text="Playlist 2"
+                        <Label Text="02 - PODNOSTALKS"
                                Grid.Row="1"
                                Grid.Column="1"
                                VerticalOptions="Center"/>
@@ -125,7 +100,7 @@
                                   Grid.Row="2"
                                   Grid.Column="0"
                                   VerticalOptions="Center"/>
-                        <Label Text="Playlist 3"
+                        <Label Text="03 - LO-FI PARA PROGRAMAR"
                                Grid.Row="2"
                                Grid.Column="1"
                                VerticalOptions="Center"/>
